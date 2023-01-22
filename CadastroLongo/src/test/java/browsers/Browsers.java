@@ -19,7 +19,7 @@ public class Browsers {
 			} else if (navegador.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "C:\\Driver\\geckodriver.exe");
 				driver = new FirefoxDriver();
-				driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
+				driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(8));
 			} else if (navegador.equalsIgnoreCase("edge")) {
 				System.setProperty("webdriver.edge.driver", "C:\\Driver\\msedgedriver.exe");
 				driver = new EdgeDriver();
