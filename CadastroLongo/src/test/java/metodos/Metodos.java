@@ -17,7 +17,7 @@ public class Metodos extends Browsers {
 		// ocorreu algum erro e onde foi
 		TakesScreenshot srcShot = ((TakesScreenshot) driver);
 		File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
-		File desFile = new File("./src/evidenciascadastros/" + nome + ".png");
+		File desFile = new File("./src/EvidenciasCadastros/" + nome + ".png");
 		FileUtils.copyFile(srcFile, desFile);
 
 	}
