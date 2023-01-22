@@ -245,8 +245,6 @@ public class Elementos {
 		
 		
 	}
-	
-	
 	public By sendQuote = By.xpath("//*[@id=\"sendquote\"]");
 	                                
 	public By Send() {
@@ -302,10 +300,7 @@ public class Elementos {
 		
 		
 	}
-	
-
-	//forma de escrever
-	//driver.findElement(By.name(elemento)).sendKeys("Mario");	
+		
 	
 }
 	
