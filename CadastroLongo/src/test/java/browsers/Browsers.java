@@ -12,7 +12,7 @@ public class Browsers {
 
 	public void abrirNavegador(String navegador, String site) {
 
-		try {
+	   try {
 			if (navegador.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
 				driver = new ChromeDriver();
