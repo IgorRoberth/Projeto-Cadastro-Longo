@@ -112,16 +112,13 @@ public class Comandos extends Browsers{
 		driver.findElement(elemento).sendKeys(texto);
 		
 	}
-	public void Fazer(String texto, By elemento) {
 	
-	   driver.findElement(elemento).sendKeys(texto);	
-		
-	}
+	//Interações da package Cadastro Caminhão
+	
 	public void desempenho(String texto ,By elemento) {
 		
 		driver.findElement(elemento).sendKeys(texto);
 		
 	}
 	
-
 }

@@ -26,6 +26,7 @@ public class CadastroCaminhao extends Browsers {
 	public void seleciono_a_marca_desejada() {
 
 		metodos.clicar(el.Marca);
+		
 
 	}
 
