@@ -297,9 +297,11 @@ public class Elementos {
 	
 	public By truckClic() {
 		return truck;
-		
-		
+			
 	}
+	
+	//Elementos inspecionados para comunicação com a package Cadastro Caminhao
+	
 	public By Marca = By.cssSelector("#make > option:nth-child(14)");
 		
 	public By marca() {

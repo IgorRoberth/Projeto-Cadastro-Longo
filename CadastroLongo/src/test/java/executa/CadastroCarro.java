@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import metodos.Metodos;
 
-public class Executa extends Browsers {
+public class CadastroCarro extends Browsers {
 	
 	Elementos ele = new Elementos();
 	Comandos coman = new Comandos();
