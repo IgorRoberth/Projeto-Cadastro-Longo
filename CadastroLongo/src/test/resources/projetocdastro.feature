@@ -2,10 +2,10 @@
 
 
 Feature: Cadastro automovel
-  Eu como usuatio do site quero cadastrar os dados do veiculo 
+  Eu como usuario do site quero cadastrar os dados do veiculo 
 
   @tag1
-  Scenario: Como usuario do site quero realizar o cadastro
+  Scenario: Como usuario do site quero realizar o cadastro de carro
     Given que entre no site "http://sampleapp.tricentis.com/"
     And que clico no veiculo desejado
     When informo o desempenho do motor

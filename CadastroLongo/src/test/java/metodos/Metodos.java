@@ -32,8 +32,7 @@ public class Metodos extends Browsers {
 
 	}
 
-	// Código para fechar o navegador
-	public void fecharNav() {
+	public void fecharNavegador() {
 		driver.quit();
 
 	}

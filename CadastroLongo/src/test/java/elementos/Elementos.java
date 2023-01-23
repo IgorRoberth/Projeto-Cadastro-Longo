@@ -19,13 +19,6 @@ public class Elementos {
 
 	}
 
-	By makeClica = By.cssSelector("#make");
-
-	public By makeClica() {
-		return makeClica;
-
-	}
-
 	By selecionarCarro = By.cssSelector("#make > option:nth-child(2)");
 
 	public By selecionarCarro() {
@@ -300,7 +293,27 @@ public class Elementos {
 		
 		
 	}
+	public By truck = By.name("Navigation Truck");
+	
+	public By truckClic() {
+		return truck;
 		
+		
+	}
+	public By Marca = By.cssSelector("#make > option:nth-child(14)");
+		
+	public By marca() {
+		return Marca;
+		
+		
+	}
+	public By Desemp = By.id("engineperformance");
+	
+	public By Desem() {
+		return Desemp;
+		
+		
+	}
 	
 }
 	
