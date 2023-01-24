@@ -55,12 +55,14 @@ public class Elementos {
 
 	}
 
-	By type = By.cssSelector("#fuel > option:nth-child(4)");
-
+	public By type = By.cssSelector("#fuel > option:nth-child(4)");
+	
 	public By type() {
 		return type;
-
+		
+		
 	}
+
 
 	private By list = By.cssSelector("#listprice");
 
@@ -83,7 +85,7 @@ public class Elementos {
 
 	}
 
-	By next = By.cssSelector("#nextenterinsurantdata");
+	public By next = By.cssSelector("#nextenterinsurantdata");
 
 	public By next() {
 		return next;
@@ -111,7 +113,7 @@ public class Elementos {
 
 	}
 
-	By macho = By.cssSelector(
+	private By macho = By.cssSelector(
 			"#insurance-form > div > section:nth-child(2) > div:nth-child(4) > p > label:nth-child(1) > span");
 
 	public By macho() {
@@ -126,7 +128,7 @@ public class Elementos {
 
 	}
 
-	By nacionalidade = By.cssSelector("#country > option:nth-child(32)");
+	private By nacionalidade = By.cssSelector("#country > option:nth-child(32)");
 
 	public By getNacio() {
 		return nacionalidade;
@@ -218,11 +220,6 @@ public class Elementos {
 	}
 	public By prox = By.cssSelector("#nextselectpriceoption");
 	
-	public By select() {
-		return prox;
-		
-		
-	}
     public By gold = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(2)");
 	
 	public By Ouro() {
@@ -232,19 +229,8 @@ public class Elementos {
 	}
 	public By download = By.id("downloadquote");
 	
-	public By down() {
-		return download;
-		
-		
-		
-	}
 	public By sendQuote = By.xpath("//*[@id=\"sendquote\"]");
 	                                
-	public By Send() {
-		return sendQuote ;
-		
-		
-	}
 	private By email = By.cssSelector("#email");
 	 
 	public By getemal() {
@@ -264,7 +250,7 @@ public class Elementos {
 		return userName;
 		
 	}
-	private By pass = By.cssSelector("#password");
+	public By pass = By.cssSelector("#password");
 	
 	public By getSenha() {
 		return pass;
@@ -276,47 +262,46 @@ public class Elementos {
 	public By getConfPass() {
 		return confirmPass;
 		
-		
 	}
 	public By finalizado = By.xpath("//*[@id=\"sendemail\"]");
-
-	public By fim() {
-		return finalizado;
-		
-		
-	}
 	
 	public By validacao = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > h2");
 	
 	public By getMsg() {
+		
 		return validacao;
-		
-		
-	}
-	public By truck = By.name("Navigation Truck");
-	
-	public By truckClic() {
-		return truck;
 			
 	}
+
+	//Elementos inspecionados para comunicação com a package Cadastro Caminhão
 	
-	//Elementos inspecionados para comunicação com a package Cadastro Caminhao
-	
+	public By truck = By.name("Navigation Truck"); 
+		
+	   public By truckClic() {
+		return truck;
+
+	}	
 	public By Marca = By.cssSelector("#make > option:nth-child(14)");
 		
-	public By marca() {
-		return Marca;
-		
-		
-	}
 	public By Desemp = By.id("engineperformance");
 	
-	public By Desem() {
-		return Desemp;
-		
-		
-	}
+	public By caFab = By.cssSelector("#dateofmanufacture");
 	
+	public By caminAss = By.cssSelector("#numberofseats > option:nth-child(3)");
+	
+	public By camComb = By.cssSelector("#fuel > option:nth-child(3)");
+	
+	public By CamCarg = By.cssSelector("#payload");
+	
+	public By CamPeso = By.cssSelector("#totalweight");
+	
+	public By precoCam = By.cssSelector("#listprice");
+	
+	public By numPlaca = By.cssSelector("#licenseplatenumber");
+	
+	public By CamKM = By.cssSelector("#annualmileage");
+
+	public By next1 = By.cssSelector("#nextenterinsurantdata");
 }
 	
 

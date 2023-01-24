@@ -11,6 +11,8 @@ Feature: Como usuario quero realizar o cadastro de seguro do caminhao
     When informo a data de fabricacao do caminhao
     When a quantidade de assentos do caminhao
     When o tipo de combustivel do caminhao
+    When informo carga util
+    When informo peso total
     When o preco de tabela do caminhao
     When numero da placa do caminhao
     When quilometragem anual do caminhao

@@ -40,35 +40,64 @@ public class CadastroCaminhao extends Browsers {
 	@When("informo a data de fabricacao do caminhao")
 	public void informo_a_data_de_fabricacao_do_caminhao() {
 
+		
+		mandos.caminFabricação("12/03/2020", el.caFab);
+		
 	}
 
 	@When("a quantidade de assentos do caminhao")
 	public void a_quantidade_de_assentos_do_caminhao() {
+		
+		metodos.clicar(el.caminAss);
 
 	}
 
 	@When("o tipo de combustivel do caminhao")
 	public void o_tipo_de_combustivel_do_caminhao() {
+		
+		metodos.clicar(el.camComb);
 
 	}
+	@When("informo carga util")
+	public void informo_carga_util() {
+
+		mandos.camCargaUtil("1000", el.CamCarg);
+
+	}
+
+	@When("informo peso total")
+	public void informo_peso_total() {
+		
+        mandos.camPeso("23000", el.CamPeso);
+
+	}
+	
 
 	@When("o preco de tabela do caminhao")
 	public void o_preco_de_tabela_do_caminhao() {
 
+		mandos.CamPreco("100000", el.precoCam);
+		
 	}
 
 	@When("numero da placa do caminhao")
 	public void numero_da_placa_do_caminhao() {
 
+      mandos.NumPlaca("NEV-8210", el.numPlaca);		
+		
 	}
 
 	@When("quilometragem anual do caminhao")
 	public void quilometragem_anual_do_caminhao() {
 
+		mandos.kmcam("81450", el.CamKM);
+		
 	}
 
 	@Then("clico em next1")
 	public void clico_em_next1() {
+		
+		metodos.clicar(el.next1);
 
 	}
 

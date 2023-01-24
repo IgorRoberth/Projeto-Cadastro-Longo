@@ -120,5 +120,30 @@ public class Comandos extends Browsers{
 		driver.findElement(elemento).sendKeys(texto);
 		
 	}
+	public void caminFabricação(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void camCargaUtil(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void camPeso (String texto, By elemento) {
+	
+		driver.findElement(elemento).sendKeys(texto);
+	
+	}
+	public void CamPreco(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void NumPlaca(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void kmcam(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
 	
 }
