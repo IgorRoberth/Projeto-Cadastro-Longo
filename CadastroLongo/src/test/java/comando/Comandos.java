@@ -145,5 +145,33 @@ public class Comandos extends Browsers{
 		
 		driver.findElement(elemento).sendKeys(texto);
 	}
+	public void Nomecam(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void Sobrename(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void dateNasciCam(String texto, By elemento) {
 	
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void EndCam(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	
+	}
+	public void CodiPost(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void CidCam(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void siteCAM(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
 }

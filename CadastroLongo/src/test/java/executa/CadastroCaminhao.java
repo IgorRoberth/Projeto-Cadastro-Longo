@@ -26,7 +26,6 @@ public class CadastroCaminhao extends Browsers {
 	public void seleciono_a_marca_desejada() {
 
 		metodos.clicar(el.Marca);
-		
 
 	}
 
@@ -40,24 +39,24 @@ public class CadastroCaminhao extends Browsers {
 	@When("informo a data de fabricacao do caminhao")
 	public void informo_a_data_de_fabricacao_do_caminhao() {
 
-		
 		mandos.caminFabricação("12/03/2020", el.caFab);
-		
+
 	}
 
 	@When("a quantidade de assentos do caminhao")
 	public void a_quantidade_de_assentos_do_caminhao() {
-		
+
 		metodos.clicar(el.caminAss);
 
 	}
 
 	@When("o tipo de combustivel do caminhao")
 	public void o_tipo_de_combustivel_do_caminhao() {
-		
+
 		metodos.clicar(el.camComb);
 
 	}
+
 	@When("informo carga util")
 	public void informo_carga_util() {
 
@@ -67,36 +66,35 @@ public class CadastroCaminhao extends Browsers {
 
 	@When("informo peso total")
 	public void informo_peso_total() {
-		
-        mandos.camPeso("23000", el.CamPeso);
+
+		mandos.camPeso("23000", el.CamPeso);
 
 	}
-	
 
 	@When("o preco de tabela do caminhao")
 	public void o_preco_de_tabela_do_caminhao() {
 
 		mandos.CamPreco("100000", el.precoCam);
-		
+
 	}
 
 	@When("numero da placa do caminhao")
 	public void numero_da_placa_do_caminhao() {
 
-      mandos.NumPlaca("NEV-8210", el.numPlaca);		
-		
+		mandos.NumPlaca("NEV-8210", el.numPlaca);
+
 	}
 
 	@When("quilometragem anual do caminhao")
 	public void quilometragem_anual_do_caminhao() {
 
 		mandos.kmcam("81450", el.CamKM);
-		
+
 	}
 
 	@Then("clico em next1")
 	public void clico_em_next1() {
-		
+
 		metodos.clicar(el.next1);
 
 	}
@@ -104,61 +102,82 @@ public class CadastroCaminhao extends Browsers {
 	@When("digito o nome")
 	public void digito_o_nome() {
 
+		mandos.Nomecam("Deverio", el.nomeCam);
+
 	}
 
 	@When("digito o sobrenome")
 	public void digito_o_sobrenome() {
 
+		mandos.Sobrename("Cardoso", el.sobreName);
 	}
 
 	@When("informo a data de nascimento")
 	public void informo_a_data_de_nascimento() {
+
+		mandos.dateNasciCam("11/04/1993", el.dataNasciCam);
 
 	}
 
 	@When("seleciono o genero desejado")
 	public void seleciono_o_genero_desejado() {
 
+		metodos.clicar(el.generoCAM);
+
 	}
 
 	@When("digito endereco desejado")
 	public void digito_endereco_desejado() {
 
-	}
+		mandos.EndCam("Rua Belchior Chavão Neto", el.endCam);
 
-	@When("insiro a cidade desejada")
-	public void insiro_a_cidade_desejada() {
-
-	}
-
+	}	
 	@When("seleciono o pais")
 	public void seleciono_o_pais() {
+		
+		metodos.clicar(el.paisCam);
 
 	}
 
 	@When("digito o	cep local")
 	public void digito_o_cep_local() {
+		
+		mandos.CodiPost("3893850", el.CodPost);
 
 	}
+	@When("insiro a cidade desejada")
+	public void insiro_a_cidade_desejada() {
+		
+		mandos.CidCam("Sorocaba", el.cityCam);
 
+	}
 	@When("seleciono ocupacao melhor para o momento")
 	public void seleciono_ocupacao_melhor_para_o_momento() {
+		
+		metodos.clicar(el.OcupCam);
 
 	}
 
 	@When("escolho os Hobbies preferidos")
 	public void escolho_os_hobbies_preferidos() {
 
+		
+		metodos.clicar(el.hobCamExcesso);
+		metodos.clicar(el.hobCamParaquedismo);
+
 	}
 
 	@When("insiro o site escolhido")
 	public void insiro_o_site_escolhido() {
+		
+		mandos.siteCAM("www.deveriocardoso.com.br", el.SiteCam);
 
 	}
 
 	@When("clico no botao next2")
 	public void clico_no_botao_next2() {
 
+		metodos.clicar(el.next2);
 	}
 
 	@When("digito a data de inicio do seguro")
@@ -179,7 +198,6 @@ public class CadastroCaminhao extends Browsers {
 	@When("seleciono o produtos opcionais que desejo")
 	public void seleciono_o_produtos_opcionais_que_desejo() {
 
-		
 	}
 
 	@Then("clico em next3")

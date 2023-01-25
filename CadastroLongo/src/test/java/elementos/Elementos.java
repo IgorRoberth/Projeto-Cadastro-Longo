@@ -302,7 +302,30 @@ public class Elementos {
 	public By CamKM = By.cssSelector("#annualmileage");
 
 	public By next1 = By.cssSelector("#nextenterinsurantdata");
-}
 	
+    public By nomeCam = By.id("firstname");
+    
+    public By sobreName = By.cssSelector("#lastname");
+    
+    public By dataNasciCam = By.id("birthdate");
+    
+    public By generoCAM = By.cssSelector("#insurance-form > div > section:nth-child(2) > div:nth-child(4) > p > label:nth-child(1) > span");
 
+    public By endCam = By.cssSelector("#streetaddress");
+    
+    public By paisCam = By.cssSelector("#country > option:nth-child(32)");
+    
+    public By CodPost = By.cssSelector("#zipcode");
+    
+    public By cityCam = By.cssSelector("#city");
+    
+    public By OcupCam = By.cssSelector("#occupation > option:nth-child(6)");
+    
+    public By hobCamExcesso = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(1) > span");
+    public By hobCamParaquedismo = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(4)");
+    
+    public By SiteCam = By.cssSelector("#website");
+    
+    public By next2 = By.cssSelector("#nextenterproductdata");
 
+}
