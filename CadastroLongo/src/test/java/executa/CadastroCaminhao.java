@@ -18,7 +18,7 @@ public class CadastroCaminhao extends Browsers {
 	public void que_entre_no_site_e_clico_em_caminhao(String site) {
 
 		metodos.abrirNavegador("Chrome", site);
-		metodos.clicar(el.truckClic());
+		metodos.clicar(el.truck);
 
 	}
 
@@ -178,31 +178,42 @@ public class CadastroCaminhao extends Browsers {
 	public void clico_no_botao_next2() {
 
 		metodos.clicar(el.next2);
+		
 	}
 
 	@When("digito a data de inicio do seguro")
 	public void digito_a_data_de_inicio_do_seguro() {
+		
+		
+		mandos.DataInicioCam("04/15/2023", el.DataCamincio);
 
 	}
 
 	@When("informo o valor total do seguro")
 	public void informo_o_valor_total_do_seguro() {
+		
+       metodos.clicar(el.ValorseguroCAM);
 
 	}
 
 	@When("escolho o seguro de danos")
 	public void escolho_o_seguro_de_danos() {
+		
+		metodos.clicar(el.seguroDanosCAM);
 
 	}
 
 	@When("seleciono o produtos opcionais que desejo")
 	public void seleciono_o_produtos_opcionais_que_desejo() {
 
+	   	metodos.clicar(el.opcaoProdCam);
+		
 	}
 
 	@Then("clico em next3")
 	public void clico_em_next3() {
 
+		metodos.clicar(el.next3Cam);
 	}
 
 	@When("seleciono o plano desejado para o caminhao")
