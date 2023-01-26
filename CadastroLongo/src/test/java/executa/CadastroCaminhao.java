@@ -13,6 +13,7 @@ public class CadastroCaminhao extends Browsers {
 	Elementos el = new Elementos();
 	Comandos mandos = new Comandos();
 	Metodos metodos = new Metodos();
+	
 
 	@Given("que entre no site e clico em caminhao {string}")
 	public void que_entre_no_site_e_clico_em_caminhao(String site) {
