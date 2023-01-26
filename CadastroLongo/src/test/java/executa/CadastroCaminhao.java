@@ -215,45 +215,62 @@ public class CadastroCaminhao extends Browsers {
 	public void clico_em_next3() {
 
 		metodos.clicar(el.next3Cam);
+		
 	}
 
 	@When("seleciono o plano desejado para o caminhao")
 	public void seleciono_o_plano_desejado_para_o_caminhao() {
+		
+		metodos.clicar(el.platinumCami);
+		
 
 	}
 
 	@When("clico em next4")
 	public void clico_em_next4() {
-
+		
+	  mandos.next4Cli(el.next4);
+      
 	}
 
 	@When("digito o email escolhido")
 	public void digito_o_email_escolhido() {
+		
+	  mandos.emailCamin("siberiochavao@gmail.com", el.emailCaminhao);	
 
 	}
 
 	@When("digito o celular escolhido")
 	public void digito_o_celular_escolhido() {
 
+		mandos.phonCamin("11954239467", el.phoneCamin);
 	}
 
 	@When("digito o usuario desejado")
 	public void digito_o_usuario_desejado() {
+		
+		mandos.userCamin("siberioChavao", el.userSib);
 
 	}
 
 	@When("digito a senha desejada")
 	public void digito_a_senha_desejada() {
+		
+		mandos.senhaCamin("Sib@123456!A", el.passCamin);
 
 	}
 
 	@When("confirmo a senha desejada")
 	public void confirmo_a_senha_desejada() {
+		
+		mandos.confiCamin("Sib@123456!A", el.confirPassCamin);
 
 	}
 
 	@Then("clico em next5")
 	public void clico_em_next5() {
+		
+		metodos.clicar(el.next5);
 
 	}
 

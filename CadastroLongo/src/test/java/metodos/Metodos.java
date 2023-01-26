@@ -28,6 +28,7 @@ public class Metodos extends Browsers {
 		} catch (Exception e) {
 			System.err.println("-------erro ao clicar---------" + e.getMessage());
 			System.err.println("-------causa do erro---------" + e.getCause());
+			
 		}
 
 	}

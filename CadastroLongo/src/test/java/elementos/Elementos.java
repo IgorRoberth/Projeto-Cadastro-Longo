@@ -3,6 +3,7 @@ package elementos;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class Elementos {
 
 	WebDriver driver;
@@ -147,4 +148,21 @@ public class Elementos {
 	public By opcaoProdCam = By.cssSelector("#insurance-form > div > section:nth-child(3) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(1) > span");
 
 	public By next3Cam = By.cssSelector("#nextselectpriceoption");
+
+	public By platinumCami = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(3)");
+
+	public By next4 = By.cssSelector("#nextsendquote");
+
+	public By emailCaminhao = By.cssSelector("#email");
+
+	public By phoneCamin = By.cssSelector("#phone");
+
+	public By userSib = By.cssSelector("#username");
+
+	public By passCamin = By.cssSelector("#password");
+
+	public By confirPassCamin = By.cssSelector("#confirmpassword");
+
+	public By next5 = By.cssSelector("#sendemail");
+	
 }

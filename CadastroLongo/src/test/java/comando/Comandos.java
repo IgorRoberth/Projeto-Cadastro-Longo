@@ -1,12 +1,14 @@
 package comando;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import browsers.Browsers;
 import elementos.Elementos;
 import metodos.Metodos;
 
-public class Comandos extends Browsers{
-	
+public class Comandos extends Browsers {
+
 	Metodos inter = new Metodos();
 	Elementos elem = new Elementos();
 
@@ -110,73 +112,118 @@ public class Comandos extends Browsers{
 	public void confirm(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
-		
+
 	}
-	
-	//Interações da package Cadastro Caminhão
-	
-	public void desempenho(String texto ,By elemento) {
-		
+
+	// Interações da package Cadastro Caminhão
+
+	public void desempenho(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
-		
+
 	}
+
 	public void caminFabricação(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void camCargaUtil(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
-	public void camPeso (String texto, By elemento) {
-	
+
+	public void camPeso(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
-	
+
 	}
+
 	public void CamPreco(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void NumPlaca(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void kmcam(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void Nomecam(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void Sobrename(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void dateNasciCam(String texto, By elemento) {
-	
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void EndCam(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
-	
+
 	}
+
 	public void CodiPost(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void CidCam(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void siteCAM(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void DataInicioCam(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
-	
+
+	public void emailCamin(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void phonCamin(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void userCamin(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void senhaCamin(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void confiCamin(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+	@SuppressWarnings("deprecation")
+	public void next4Cli(By elemento) {
+		
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote"))).click();
+
+	}	
 }
