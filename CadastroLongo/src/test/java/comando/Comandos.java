@@ -232,4 +232,23 @@ public class Comandos extends Browsers {
 		
 		driver.findElement(elemento).sendKeys(texto);
 	}
+	public void desemMoto(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+		
+	}
+	public void datFabMoto (String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	
+	}
+	public void precoMotoTab(String texto, By elemento) {
+	
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void KMMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
 }

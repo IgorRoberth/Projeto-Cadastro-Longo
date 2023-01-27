@@ -175,4 +175,15 @@ public class Elementos {
 	
 	public By cilindroMoto = By.cssSelector("#cylindercapacity");
 	
+	public By desempMoto = By.cssSelector("#engineperformance");
+	
+	public By dataFabricacaoMoto = By.cssSelector("#dateofmanufacture");
+	
+	public By assentMoto = By.cssSelector("#numberofseatsmotorcycle > option:nth-child(3)");
+	
+	public By precoMoto = By.cssSelector("#listprice");
+	
+	public By kmAnualMoto = By.cssSelector("#annualmileage");
+
+	public By proxMoto1 = By.cssSelector("#nextenterinsurantdata");
 }

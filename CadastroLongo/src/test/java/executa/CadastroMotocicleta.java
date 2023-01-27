@@ -51,34 +51,44 @@ public class CadastroMotocicleta extends Browsers {
 
 	@When("informar o desempenho do motor")
 	public void informar_o_desempenho_do_motor() {
-
+     
+		comandos.desemMoto("48", element.desempMoto);
 
 	}
 
 	@When("informar a data de fabricacao da moto")
 	public void informar_a_data_de_fabricacao_da_moto() {
 
+		comandos.datFabMoto("11/12/2020", element.dataFabricacaoMoto);
 
 	}
 
 	@When("informar a quantidade de assentos")
 	public void informar_a_quantidade_de_assentos() {
 
+		metd.clicar(element.assentMoto);
+		
 	}
 
 	@When("informar o preco de tabela da moto")
 	public void informar_o_preco_de_tabela_da_moto() {
 
+		comandos.ciclindroMoto("15250", element.precoMoto);
+		
 	}
 
 	@When("informar quilometragem anual da moto")
 	public void informar_quilometragem_anual_da_moto() {
+		
+		comandos.KMMoto("34567", element.kmAnualMoto);
 
 	}
 
 	@Then("clicar em proximo")
 	public void clicar_em_proximo() {
-	    
+
+		metd.clicar(element.proxMoto1);
+		
 	}
 
 }
