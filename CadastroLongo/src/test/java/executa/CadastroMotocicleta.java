@@ -76,8 +76,8 @@ public class CadastroMotocicleta extends Browsers {
 
 	}
 
-	@Then("cliar em proximo")
-	public void cliar_em_proximo() {
+	@Then("clicar em proximo")
+	public void clicar_em_proximo() {
 	    
 	}
 

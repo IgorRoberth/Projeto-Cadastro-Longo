@@ -15,7 +15,7 @@ Feature: Como usuario desejo realizar cadastro do seguro de moto
     When informar a quantidade de assentos
     When informar o preco de tabela da moto
     When informar quilometragem anual da moto
-    Then cliar em proximo
+    Then clicar em proximo
     
 
 
