@@ -165,4 +165,14 @@ public class Elementos {
 
 	public By next5 = By.cssSelector("#sendemail");
 	
+	//Cadastro de Motocicleta 
+	
+	public By motocicleta = By.cssSelector("#nav_motorcycle");
+	
+	public By marcaMoto = By.cssSelector("#make > option:nth-child(13)");
+	
+	public By modeloMoto = By.cssSelector("#model > option:nth-child(4)");
+	
+	public By cilindroMoto = By.cssSelector("#cylindercapacity");
+	
 }

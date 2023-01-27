@@ -226,4 +226,10 @@ public class Comandos extends Browsers {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote"))).click();
 		
 	}	
+	//Interações package Cadastro Motocicleta
+	
+	public void ciclindroMoto (String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
 }

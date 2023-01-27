@@ -15,7 +15,6 @@ public class CadastroCarro extends Browsers {
 	Elementos ele = new Elementos();
 	Comandos coman = new Comandos();
 	Metodos met = new Metodos();
-	Browsers bro = new Browsers();
 	
 	
 	@Given("que entre no site {string}")
