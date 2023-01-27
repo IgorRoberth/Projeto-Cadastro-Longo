@@ -224,6 +224,6 @@ public class Comandos extends Browsers {
 	public void next4Cli(By elemento) {
 		
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote"))).click();
-
+		
 	}	
 }
