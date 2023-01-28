@@ -186,4 +186,43 @@ public class Elementos {
 	public By kmAnualMoto = By.cssSelector("#annualmileage");
 
 	public By proxMoto1 = By.cssSelector("#nextenterinsurantdata");
+	
+	public By nomeCliMoto = By.cssSelector("#firstname");
+	
+	public By sobreNomeCliMoto = By.cssSelector("#lastname");
+	
+	public By dataDNascMoto = By.cssSelector("#birthdate");
+	
+	public By generoMoto = By.cssSelector("#insurance-form > div > section:nth-child(2) > div:nth-child(4) > p > label:nth-child(1) > span");
+	
+	public By endCliMoto = By.cssSelector("#streetaddress");
+
+	public By nacioMoto = By.cssSelector("#country > option:nth-child(23)");
+	
+	public By cepCliMoto = By.cssSelector("#zipcode");
+	
+	public By cityMoto = By.cssSelector("#city");
+	
+	public By ocupaMoto = By.cssSelector("#occupation > option:nth-child(6)");
+	
+	public By HobbMoto = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(1) > span");
+	
+	public By webSiMoto = By.cssSelector("#website");
+	
+	public By clicaMotoProx2 = By.cssSelector("#nextenterproductdata");
+	
+	public By dataInicioMoto = By.cssSelector("#startdate");
+	
+	public By somaSegMoto = By.cssSelector("#insurancesum > option:nth-child(2)");
+
+	public By segdeMoto = By.cssSelector("#damageinsurance > option:nth-child(3)");
+
+	public By opcaoProdMoto = By.cssSelector("#insurance-form > div > section:nth-child(3) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(2) > span");
+
+	public By clicarMotoProx3 = By.cssSelector("#nextselectpriceoption");
+	
+	public By escolhePlanoMoto = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(1) > span");
+	
+	public By ProxiMoto4 = By.cssSelector("#nextsendquote");
+	
 }

@@ -220,35 +220,85 @@ public class Comandos extends Browsers {
 		driver.findElement(elemento).sendKeys(texto);
 
 	}
+
 	@SuppressWarnings("deprecation")
 	public void next4Cli(By elemento) {
-		
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote"))).click();
-		
-	}	
-	//Interações package Cadastro Motocicleta
-	
-	public void ciclindroMoto (String texto, By elemento) {
-		
+
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote")))
+				.click();
+
+	}
+	// Interações package Cadastro Motocicleta
+
+	public void ciclindroMoto(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void desemMoto(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
-		
+
 	}
-	public void datFabMoto (String texto, By elemento) {
-		
+
+	public void datFabMoto(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
-	
+
 	}
+
 	public void precoMotoTab(String texto, By elemento) {
-	
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void KMMoto(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
 
 	}
+
+	public void nomeMotoCli(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void SobreNomeMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void daTNasciMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void endMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void cepMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void cidadeMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void redeMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void dataIniMoto(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void proxmoto4(By elemento) {
+	
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote"))).click();
+	}
+	
 }
