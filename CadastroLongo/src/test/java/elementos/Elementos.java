@@ -243,4 +243,12 @@ public class Elementos {
    
 	public By clicarOkCaminhao = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
 
+	
+	//Interações com a package CadastroCampista	
+	public By clicarCamper = By.cssSelector("#nav_camper");
+	
+	public By marcaVeiculo = By.cssSelector("#make > option:nth-child(5)");
+	
+	public By performCarCamper = By.cssSelector("#engineperformance"); 
+
 }

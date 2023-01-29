@@ -359,4 +359,12 @@ public class Comandos extends Browsers {
 				.click();
 
 	}
+	//Interações com a package CadastroCampista
+    public void escrPerforCarcamper (String texto, By elemento) {
+    
+    	driver.findElement(elemento).sendKeys(texto);
+    	
+    }
+    
+	
 }
