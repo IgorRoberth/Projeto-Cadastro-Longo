@@ -292,13 +292,71 @@ public class Comandos extends Browsers {
 
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	public void dataIniMoto(String texto, By elemento) {
-		
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
+	@SuppressWarnings("deprecation")
 	public void proxmoto4(By elemento) {
-	
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote"))).click();
+
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote")))
+				.click();
 	}
-	
+
+	public void emailMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+
+	public void telMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+
+	public void userMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void passMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void confirmPassMoto(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+
+	@SuppressWarnings("deprecation")
+	public void clicarOkMoto(By elemento) {
+		new WebDriverWait(driver, 20)
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button")))
+				.click();
+
+	}
+
+	@SuppressWarnings("deprecation")
+	public void clicarOkFimCarro(By elemento) {
+		new WebDriverWait(driver, 20)
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button	")))
+				.click();
+
+	}
+
+	@SuppressWarnings("deprecation")
+	public void clicarOkCaminhao(By elemento) {
+		new WebDriverWait(driver, 20)
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button")))
+				.click();
+
+	}
 }

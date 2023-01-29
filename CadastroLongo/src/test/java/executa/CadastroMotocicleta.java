@@ -1,5 +1,7 @@
 package executa;
 
+import java.io.IOException;
+
 import browsers.Browsers;
 import comando.Comandos;
 import elementos.Elementos;
@@ -83,8 +85,9 @@ public class CadastroMotocicleta extends Browsers {
 		comandos.KMMoto("34567", element.kmAnualMoto);
 	  }
 		@Then("clicar em proximo1")
-		public void clicar_em_proximo1() {
+		public void clicar_em_proximo1() throws IOException {
 
+		metd.screenShot("Proximo 1");	
 		metd.clicar(element.proxMoto1);
 		
 	}
@@ -106,7 +109,7 @@ public class CadastroMotocicleta extends Browsers {
 	public void informar_data_de_nascimento() {
 
 		comandos.daTNasciMoto("04/22/1995", element.dataDNascMoto);
-
+        
 	}
 	@When("seleciono o genero do cliente")
 	public void seleciono_o_genero_do_cliente() {
@@ -117,43 +120,43 @@ public class CadastroMotocicleta extends Browsers {
 	@When("informar endereco")
 	public void informar_endereco() {
 
-		comandos.endMoto("Rua Brenario Silveira Breca", element.endCliMoto);
-
+	   comandos.endMoto("Rua Brenario Silveira Breca", element.endCliMoto);
+	       
 	}
 
 	@When("selecionar nacionalidade")
 	public void selecionar_nacionalidade() {
 
 		metd.clicar(element.nacioMoto);
-
+		
 	}
 
 	@When("informar codigo postal")
 	public void informar_codigo_postal() {
 
 		comandos.cepMoto("329103", element.cepCliMoto);
-
+		
 	}
 
 	@When("informar cidade")
 	public void informar_cidade() {
 
 		comandos.cidadeMoto("Lalonge", element.cityMoto);
-
+		
 	}
 
 	@When("informar a ocupacao")
 	public void informar_a_ocupacao() {
 
 		metd.clicar(element.ocupaMoto);
-
+		
 	}
 
 	@When("selecionar os hobbies")
 	public void selecionar_os_hobbies() {
 
 		metd.clicar(element.HobbMoto);
-
+		
 	}
 
 	@When("informar local na rede")
@@ -163,91 +166,111 @@ public class CadastroMotocicleta extends Browsers {
 		
 	}
 	@Then("clicar em proximo2")
-	public void clicar_em_proximo2() {
+	public void clicar_em_proximo2() throws IOException {
 
+		metd.screenShot("Proximo 2");
 		metd.clicar(element.clicaMotoProx2);
-
+		
 	}
 	@When("digitar data de inicio seguro moto")
 	public void digitar_data_de_inicio_seguro_moto() {
 
 		comandos.dataIniMoto("12/05/2023", element.dataInicioMoto);
+		
 	}
 
 	@When("informar soma total do seguro moto")
 	public void informar_soma_total_do_seguro_moto() {
 
 		metd.clicar(element.somaSegMoto);
-
+		
 	}
 
 	@When("informar seguro de danos moto")
 	public void informar_seguro_de_danos_moto() {
 
 		metd.clicar(element.segdeMoto);
-
+	
 	}
 
 	@When("opcao do produto moto")
 	public void opcao_do_produto_moto() {
 
 		metd.clicar(element.opcaoProdMoto);
-
+		
 	}
 
 	@Then("clicar em proximo3")
-	public void clicar_em_proximo3() {
+	public void clicar_em_proximo3() throws IOException {
 
+		metd.screenShot("Proximo 3");
 		metd.clicar(element.clicarMotoProx3);
-
+		
 	}
 	@When("selecionar plano da moto")
 	public void selecionar_plano_da_moto() {
   
 		metd.clicar(element.escolhePlanoMoto);
-      
+		
 	}
 
 	@Then("clicar em proximo4")
-	public void clicar_em_proximo4() {
+	public void clicar_em_proximo4() throws IOException {
 
+		metd.screenShot("Proximo 4");
 		comandos.proxmoto4(element.ProxiMoto4);
 		
 	}
 	@When("digitar email cliente moto")
 	public void digitar_email_cliente_moto() {
 
+		comandos.email("julioclovis@gmail.com", element.emailMoto);
 		
-
 	}
 
 	@When("digitar telefone cliente moto")
 	public void digitar_telefone_cliente_moto() {
 
-
+		comandos.telMoto("11956873456", element.celularMoto);
+		
 	}
 
 	@When("digitar usuario cliente moto")
 	public void digitar_usuario_cliente_moto() {
 
-
+		comandos.userMoto("julio145", element.userMoto);
+		
 	}
 
 	@When("criar senha cliente moto")
 	public void criar_senha_cliente_moto() {
 
-
+		comandos.passMoto("Fgp3214@f", element.passMoto);
+		
 	}
 
 	@When("confirmar senha cliente moto")
 	public void confirmar_senha_cliente_moto() {
 
-
+		comandos.confirmPassMoto("Fgp3214@f", element.confirmPass);
+		
+		
 	}
 
 	@Then("clicar em proximo5")
-	public void clicar_em_proximo5() {
+	public void clicar_em_proximo5() throws IOException {
 
+		metd.clicar(element.proxMoto5);
+        
+		
+	}
+	@Then("clicar em ok encerrando o cadastro")
+	public void clicar_em_ok_encerrando_o_cadastro() throws IOException {
+
+		
+		comandos.clicarOkMoto(element.clicaOkMoto);
+		metd.screenShot("Finalizando Cadastro");
+		metd.fecharNavegador();
 
 	}
 

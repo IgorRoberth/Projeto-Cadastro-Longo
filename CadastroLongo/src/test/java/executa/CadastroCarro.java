@@ -290,7 +290,8 @@ public class CadastroCarro extends Browsers {
 		
 		met.clicar(ele.finalizado);
       //  met.screenShot("Conclue o cadastro e valido a mensagem retornada");		
-	   // met.fecharNavegador();	
+	    coman.clicarOkFimCarro(ele.clicarokCarro);
+	    met.fecharNavegador();	
 	 
 	}
 

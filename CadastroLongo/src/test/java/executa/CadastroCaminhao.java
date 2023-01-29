@@ -271,7 +271,8 @@ public class CadastroCaminhao extends Browsers {
 	public void clico_em_next5() {
 		
 		metodos.clicar(el.next5);
-
+		mandos.clicarOkCaminhao(el.clicarOkCaminhao);
+        metodos.fecharNavegador();
 	}
 
 }

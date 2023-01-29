@@ -40,6 +40,7 @@ Feature: Como usuario desejo realizar cadastro do seguro de moto
     When digitar usuario cliente moto
     When criar senha cliente moto
     When confirmar senha cliente moto
-    Then clicar em proximo5
+    When clicar em proximo5
+    Then clicar em ok encerrando o cadastro
 
 

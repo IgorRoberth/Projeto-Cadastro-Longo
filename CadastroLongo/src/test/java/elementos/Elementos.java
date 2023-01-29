@@ -225,4 +225,22 @@ public class Elementos {
 	
 	public By ProxiMoto4 = By.cssSelector("#nextsendquote");
 	
+	public By emailMoto = By.cssSelector("#email");
+	
+	public By celularMoto = By.cssSelector("#phone");
+	
+	public By userMoto = By.cssSelector("#username");
+	
+	public By passMoto = By.cssSelector("#password");
+	
+	public By confirmMoto = By.cssSelector("#confirmpassword");
+	
+	public By proxMoto5 = By.cssSelector("#sendemail");
+	
+	public By clicaOkMoto = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
+
+	public By clicarokCarro =By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
+   
+	public By clicarOkCaminhao = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
+
 }
