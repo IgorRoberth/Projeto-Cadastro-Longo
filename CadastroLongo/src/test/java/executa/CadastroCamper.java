@@ -103,13 +103,14 @@ public class CadastroCamper extends Browsers{
 	@When("informo a quilometragem anual do veiculo")
 	public void informo_a_quilometragem_anual_do_veiculo() {
 
-		
+		cmd.anualCamper("34230", elem.anualKmCamper);
 
 	}
 
 	@Then("clico em proximo")
 	public void clico_em_proximo() {
 
+		mtd.clicar(elem.proxCamper1);
 
 	}
 

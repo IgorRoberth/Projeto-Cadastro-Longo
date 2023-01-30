@@ -266,5 +266,9 @@ public class Elementos {
     public By precoTabCamper = By.cssSelector("#listprice");
     
     public By numPlacaCamper = By.cssSelector("#licenseplatenumber");
-
+    
+    public By anualKmCamper = By.cssSelector("#annualmileage");
+    
+    public By proxCamper1 = By.cssSelector("#nextenterinsurantdata");
+    
 }
