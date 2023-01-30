@@ -88,6 +88,7 @@ public class Elementos {
 
 	public By validacao = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > h2");
 
+	
 	// Elementos inspecionados para comunicação com a package Cadastro Caminhão
 	public By truck = By.name("Navigation Truck");
 
@@ -165,8 +166,7 @@ public class Elementos {
 
 	public By next5 = By.cssSelector("#sendemail");
 	
-	//Cadastro de Motocicleta 
-	
+	//Cadastro de Motocicleta 	
 	public By motocicleta = By.cssSelector("#nav_motorcycle");
 	
 	public By marcaMoto = By.cssSelector("#make > option:nth-child(13)");
@@ -250,5 +250,21 @@ public class Elementos {
 	public By marcaVeiculo = By.cssSelector("#make > option:nth-child(5)");
 	
 	public By performCarCamper = By.cssSelector("#engineperformance"); 
+	
+	public By dataFabCamper = By.cssSelector("#dateofmanufacture");
+	
+	public By AssCamper = By.cssSelector("#numberofseats > option:nth-child(9)");
+
+    public By ladoVolantCamp = By.cssSelector("#insurance-form > div > section:nth-child(1) > div:nth-child(5) > p > label:nth-child(2)");
+
+    public By tipCombCamper = By.cssSelector("#fuel > option:nth-child(5)");
+    
+    public By cargUtCamper = By.cssSelector("#payload");
+    
+    public By totalveicCamper = By.cssSelector("#totalweight");
+    
+    public By precoTabCamper = By.cssSelector("#listprice");
+    
+    public By numPlacaCamper = By.cssSelector("#licenseplatenumber");
 
 }

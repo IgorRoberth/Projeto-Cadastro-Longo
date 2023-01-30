@@ -6,8 +6,8 @@ Feature: Cadastro seguro camper
   @tag4
   Scenario: Como usuario quero realizar um cadastro campista
     
-    Given que entre no site tricents "http://sampleapp.tricentis.com"
-    And clico em seguro campista
+   Given que entre no site tricents "http://sampleapp.tricentis.com"
+     And clico em seguro campista
     When seleciono a marca do veiculo
     When digito desempenho do motor do veiculo
     When digito a data de fabricacao
