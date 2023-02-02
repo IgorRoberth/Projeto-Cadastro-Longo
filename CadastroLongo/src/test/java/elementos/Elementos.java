@@ -271,4 +271,6 @@ public class Elementos {
     
     public By proxCamper1 = By.cssSelector("#nextenterinsurantdata");
     
+    public By primNomeCamper = By.cssSelector("#firstname");
+    
 }

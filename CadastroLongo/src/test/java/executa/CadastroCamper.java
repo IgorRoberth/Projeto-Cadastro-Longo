@@ -113,5 +113,76 @@ public class CadastroCamper extends Browsers{
 		mtd.clicar(elem.proxCamper1);
 
 	}
+	@When("digitar primeiro nome camper")
+	public void digitar_primeiro_nome_camper() {
+
+        cmd.priNomeCamper("Roberto", elem.primNomeCamper);
+		
+	}
+
+	@When("digitar sobrenome camper")
+	public void digitar_sobrenome_camper() {
+
+
+	}
+
+	@When("digitar data de nascimento camper")
+	public void digitar_data_de_nascimento_camper() {
+
+
+	}
+
+	@When("selecionar o genero")
+	public void selecionar_o_genero() {
+
+
+	}
+
+	@When("digitar endereco")
+	public void digitar_endereco() {
+
+		
+	}
+
+	@When("selecionar nacionalidede")
+	public void selecionar_nacionalidede() {
+
+
+	}
+
+	@When("digitar codigo postal")
+	public void digitar_codigo_postal() {
+
+		
+	}
+
+	@When("digitar cidade")
+	public void digitar_cidade() {
+
+
+	}
+
+	@When("clicar na ocupacao atual")
+	public void clicar_na_ocupacao_atual() {
+
+
+	}
+
+	@When("selecionar o hobbie")
+	public void selecionar_o_hobbie() {
+	    
+		
+	}
+
+	@When("local na rede internet")
+	public void local_na_rede_internet() {
+	    
+		
+	}
+
+	@Then("clico em next2")
+	public void clico_em_next2() {
+	   
+	}
 
 }

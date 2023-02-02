@@ -395,4 +395,9 @@ public class Comandos extends Browsers {
     	
     	driver.findElement(elemento).sendKeys(texto);
     }
+    public void priNomeCamper (String texto, By elemento) {
+    	
+    	driver.findElement(elemento).sendKeys(texto);
+    }
+    
 }
