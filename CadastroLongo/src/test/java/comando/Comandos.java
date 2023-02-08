@@ -438,5 +438,16 @@ public class Comandos extends Browsers {
 		
 		driver.findElement(elemento).sendKeys(texto);
 	}
+	public void dataIncCamper (String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
 	
+	}
+	@SuppressWarnings("deprecation")
+	public void clicarOkCamper(By elemento) {
+		new WebDriverWait(driver, 20)
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+						"#nextsendquote")))
+				.click();
+   }
 }

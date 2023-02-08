@@ -32,3 +32,16 @@ Feature: Cadastro seguro camper
     When selecionar o hobbie
     When local na rede internet
     Then clico em next2
+    When informo a data de inicio do seguro camper
+    When seleciono a soma do seguro camper
+    When seleicono seguro de danos camper
+    When seleciono a opcao de produtos camper
+    Then clico em next3 camper
+    When selecionar a opcao do plano desejado
+    When clicar next4 Camper
+    When digitar email do usuario camper
+    When digitar celular do usuario camper
+    When criar o user do usuario camper
+    When criar senha do usuario camper
+    When confirmar a senha criada do usuario camper
+    Then clicar em send camper

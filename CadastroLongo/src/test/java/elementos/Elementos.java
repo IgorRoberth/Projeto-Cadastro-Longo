@@ -295,4 +295,19 @@ public class Elementos {
     public By redeInterCamper = By.cssSelector("#website");
     
     public By proxiCamper2 = By.cssSelector("#nextenterproductdata");
+
+    public By inicSegCamper = By.cssSelector("#startdate");
+    
+    public By somaSegCamp = By.cssSelector("#insurancesum > option:nth-child(4)");
+
+    public By segDanosCamper = By.cssSelector("#damageinsurance > option:nth-child(2)");
+    
+    public By prodOpcCamper = By.cssSelector("#insurance-form > div > section:nth-child(3) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(2) > span");
+
+    public By proxCamper3 = By.cssSelector("#nextselectpriceoption");
+    
+    public By priceOption = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(4)");
+
+    public By nextcamper3 = By.cssSelector("#nextsendquote");
+
 }

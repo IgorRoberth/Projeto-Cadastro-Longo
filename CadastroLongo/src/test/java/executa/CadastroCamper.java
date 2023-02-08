@@ -194,5 +194,88 @@ public class CadastroCamper extends Browsers{
 	   
 		mtd.clicar(elem.proxiCamper2);
 	}
+	@When("informo a data de inicio do seguro camper")
+	public void informo_a_data_de_inicio_do_seguro_camper() {
+
+		cmd.dataIncCamper("05/20/2023", elem.inicSegCamper);
+
+	}
+
+	@When("seleciono a soma do seguro camper")
+	public void seleciono_a_soma_do_seguro_camper() {
+
+		mtd.clicar(elem.somaSegCamp);
+
+	}
+
+	@When("seleicono seguro de danos camper")
+	public void seleicono_seguro_de_danos_camper() {
+
+		mtd.clicar(elem.segDanosCamper);
+
+	}
+
+	@When("seleciono a opcao de produtos camper")
+	public void seleciono_a_opcao_de_produtos_camper() {
+
+		mtd.clicar(elem.prodOpcCamper);
+
+	}
+
+	@Then("clico em next3 camper")
+	public void clico_em_next3_camper() {
+	   
+		mtd.clicar(elem.proxCamper3);
+		mtd.clicar(elem.priceOption);
+		cmd.clicarOkCamper(elem.nextcamper3);
+	}
+	@When("selecionar a opcao do plano desejado")
+	public void selecionar_a_opcao_do_plano_desejado() {
+
+
+	}
+
+	@When("clicar next4 Camper")
+	public void clicar_next4_camper() {
+
+
+	}
+
+	@When("digitar email do usuario camper")
+	public void digitar_email_do_usuario_camper() {
+
+
+	}
+
+	@When("digitar celular do usuario camper")
+	public void digitar_celular_do_usuario_camper() {
+
+
+	}
+
+	@When("criar o user do usuario camper")
+	public void criar_o_user_do_usuario_camper() {
+
+
+	}
+
+	@When("criar senha do usuario camper")
+	public void criar_senha_do_usuario_camper() {
+
+
+	}
+
+	@When("confirmar a senha criada do usuario camper")
+	public void confirmar_a_senha_criada_do_usuario_camper() {
+
+
+	}
+
+	@Then("clicar em send camper")
+	public void clicar_em_send_camper() {
+
+
+	}
+	
 
 }
