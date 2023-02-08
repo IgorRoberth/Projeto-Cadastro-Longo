@@ -242,7 +242,8 @@ public class Elementos {
 	public By clicarokCarro =By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
    
 	public By clicarOkCaminhao = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
-
+	
+	public By msgValid = By.xpath("/html/body/div[6]/h2/font/font");
 	
 	//Interações com a package CadastroCampista	
 	public By clicarCamper = By.cssSelector("#nav_camper");
@@ -273,4 +274,25 @@ public class Elementos {
     
     public By primNomeCamper = By.cssSelector("#firstname");
     
+    public By nameSobreCamper = By.cssSelector("#lastname");
+    
+    public By dateCamperOf = By.cssSelector("#birthdate");
+    
+    public By MachoCamper = By.cssSelector("#insurance-form > div > section:nth-child(2) > div:nth-child(4) > p > label:nth-child(1) > span");
+    
+    public By endrecoCamper = By.cssSelector("#streetaddress");
+
+    public By nacioCamper = By.cssSelector("#country > option:nth-child(32)");
+    
+    public By zipCodCamper = By.cssSelector("#zipcode");
+    
+    public By CidCamper = By.cssSelector("#city");
+    
+    public By ocupCamper = By.cssSelector("#occupation > option:nth-child(3)");
+
+    public By HobbCamper = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(5) > span");
+
+    public By redeInterCamper = By.cssSelector("#website");
+    
+    public By proxiCamper2 = By.cssSelector("#nextenterproductdata");
 }

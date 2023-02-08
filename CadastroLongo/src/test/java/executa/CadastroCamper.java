@@ -123,29 +123,35 @@ public class CadastroCamper extends Browsers{
 	@When("digitar sobrenome camper")
 	public void digitar_sobrenome_camper() {
 
+		cmd.sobreNomeCamper("Abilio", elem.nameSobreCamper);
 
 	}
 
 	@When("digitar data de nascimento camper")
 	public void digitar_data_de_nascimento_camper() {
 
+		cmd.dateOfCamper("07/12/1996", elem.dateCamperOf);
 
 	}
 
 	@When("selecionar o genero")
 	public void selecionar_o_genero() {
 
+		mtd.clicar(elem.MachoCamper);
 
 	}
 
 	@When("digitar endereco")
 	public void digitar_endereco() {
 
+		cmd.endereCamper("Rua Beduino Valquirio Neto", elem.endrecoCamper);
 		
 	}
 
 	@When("selecionar nacionalidede")
 	public void selecionar_nacionalidede() {
+		
+	    mtd.clicar(elem.nacioCamper);
 
 
 	}
@@ -153,36 +159,40 @@ public class CadastroCamper extends Browsers{
 	@When("digitar codigo postal")
 	public void digitar_codigo_postal() {
 
-		
+		cmd.zipCodCamper("4392012", elem.zipCodCamper);
 	}
 
 	@When("digitar cidade")
 	public void digitar_cidade() {
-
+		
+        cmd.cityCamper("La bem longe ", elem.CidCamper);
 
 	}
 
 	@When("clicar na ocupacao atual")
 	public void clicar_na_ocupacao_atual() {
 
+		mtd.clicar(elem.ocupCamper);
 
 	}
 
 	@When("selecionar o hobbie")
 	public void selecionar_o_hobbie() {
-	    
+
+		mtd.clicar(elem.HobbCamper);
 		
 	}
 
 	@When("local na rede internet")
 	public void local_na_rede_internet() {
 	    
-		
+		cmd.localnaCamper("www.fhdjs.com.br", elem.redeInterCamper);
 	}
 
 	@Then("clico em next2")
 	public void clico_em_next2() {
 	   
+		mtd.clicar(elem.proxiCamper2);
 	}
 
 }
