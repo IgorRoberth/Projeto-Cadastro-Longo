@@ -89,7 +89,7 @@ public class CadastroMotocicleta extends Browsers {
 		@Then("clicar em proximo1")
 		public void clicar_em_proximo1() throws IOException {
 
-		metd.screenShot("Proximo 1");	
+	//	metd.screenShot("Proximo 1");	
 		metd.clicar(element.proxMoto1);
 		
 	}
@@ -170,7 +170,7 @@ public class CadastroMotocicleta extends Browsers {
 	@Then("clicar em proximo2")
 	public void clicar_em_proximo2() throws IOException {
 
-		metd.screenShot("Proximo 2");
+	//	metd.screenShot("Proximo 2");
 		metd.clicar(element.clicaMotoProx2);
 		
 	}
@@ -205,7 +205,7 @@ public class CadastroMotocicleta extends Browsers {
 	@Then("clicar em proximo3")
 	public void clicar_em_proximo3() throws IOException {
 
-		metd.screenShot("Proximo 3");
+	//	metd.screenShot("Proximo 3");
 		metd.clicar(element.clicarMotoProx3);
 		
 	}
@@ -271,7 +271,7 @@ public class CadastroMotocicleta extends Browsers {
 
 		
 		comandos.clicarOkMoto(element.clicaOkMoto);
-		metd.screenShot("Finalizando Cadastro");
+	//	metd.screenShot("Finalizando Cadastro");
 		metd.fecharNavegador();
 
 	}
