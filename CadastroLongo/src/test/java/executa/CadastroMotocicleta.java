@@ -219,7 +219,7 @@ public class CadastroMotocicleta extends Browsers {
 	@Then("clicar em proximo4")
 	public void clicar_em_proximo4() throws IOException {
 
-		metd.screenShot("Proximo 4");
+		//metd.screenShot("Proximo 4");
 		comandos.proxmoto4(element.ProxiMoto4);
 		
 	}
