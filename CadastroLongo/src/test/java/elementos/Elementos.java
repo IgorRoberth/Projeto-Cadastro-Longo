@@ -12,9 +12,7 @@ public class Elementos {
 
 	public By selecionarCarro = By.cssSelector("#make > option:nth-child(2)");
 
-	public By performance = By.cssSelector("#engineperformance");
-
-	public By Velo = By.name("[kW]");
+	public By performance = By.name("[kW]");
 
 	public By date = By.id("dateofmanufacture");
 
@@ -90,6 +88,7 @@ public class Elementos {
 
 	
 	// Elementos inspecionados para comunicação com a package Cadastro Caminhão
+	
 	public By truck = By.name("Navigation Truck");
 
 	public By Marca = By.cssSelector("#make > option:nth-child(14)");
@@ -308,6 +307,20 @@ public class Elementos {
     
     public By priceOption = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(4)");
 
-    public By nextcamper3 = By.cssSelector("#nextsendquote");
+    public By nextcamper4 = By.cssSelector("#nextsendquote");
+
+    public By emailCamper = By.cssSelector("#email");
+    
+    public By phoneCamper = By.cssSelector("#phone");
+    
+    public By userNameCamper = By.cssSelector("#username");
+    
+    public By passCamp = By.cssSelector("#password");
+    
+    public By confPass = By.cssSelector("#confirmpassword");
+    
+    public By finalizaCamper = By.cssSelector("#sendemail");
+    
+    public By clickOkCamper = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
 
 }

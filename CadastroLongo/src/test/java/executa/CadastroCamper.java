@@ -16,11 +16,12 @@ public class CadastroCamper extends Browsers{
 	
 	
 	@Given("que entre no site tricents {string}")
-	public void que_entre_no_site_tricents(String site) {
+	public void que_entre_no_site_tricents(String site) throws InterruptedException {
 
-		mtd.abrirNavegador("Chrome", site);
-	 // mtd.abrirNavegador("Firefox", site);
+	 //	mtd.abrirNavegador("Chrome", site);
+	    mtd.abrirNavegador("Firefox", site);
 	 //	mtd.abrirNavegador("Edge", site);
+	
 	}
 
 	@Given("clico em seguro campista")
@@ -38,7 +39,7 @@ public class CadastroCamper extends Browsers{
 	}
 
 	@When("digito desempenho do motor do veiculo")
-	public void digito_desempenho_do_motor_do_veiculo() {
+	public void digito_desempenho_do_motor_do_veiculo() throws InterruptedException {
 
 		cmd.escrPerforCarcamper("248", elem.performCarCamper);
 		
@@ -226,56 +227,65 @@ public class CadastroCamper extends Browsers{
 	public void clico_em_next3_camper() {
 	   
 		mtd.clicar(elem.proxCamper3);
-		mtd.clicar(elem.priceOption);
-		cmd.clicarOkCamper(elem.nextcamper3);
+	
+		
 	}
 	@When("selecionar a opcao do plano desejado")
 	public void selecionar_a_opcao_do_plano_desejado() {
 
+		mtd.clicar(elem.priceOption);
+		
 
 	}
 
 	@When("clicar next4 Camper")
 	public void clicar_next4_camper() {
 
+		cmd.clicarOkCamper4(elem.nextcamper4);
 
 	}
 
 	@When("digitar email do usuario camper")
 	public void digitar_email_do_usuario_camper() {
 
+		cmd.escreverEmail("abiliorob@gmail.com", elem.emailCamper);
 
 	}
 
 	@When("digitar celular do usuario camper")
 	public void digitar_celular_do_usuario_camper() {
 
+		cmd.phoneCamper("11983928393", elem.phoneCamper);
 
 	}
 
 	@When("criar o user do usuario camper")
 	public void criar_o_user_do_usuario_camper() {
 
+		cmd.userCamper("robuser21", elem.userNameCamper);
 
 	}
 
 	@When("criar senha do usuario camper")
 	public void criar_senha_do_usuario_camper() {
 
+		cmd.passCamper("Sl2394@3", elem.passCamp);
 
 	}
 
 	@When("confirmar a senha criada do usuario camper")
 	public void confirmar_a_senha_criada_do_usuario_camper() {
 
+		cmd.confPassCamper("Sl2394@3", elem.confPass);
 
 	}
 
 	@Then("clicar em send camper")
 	public void clicar_em_send_camper() {
 
-
+		mtd.clicar(elem.finalizaCamper);
+		cmd.clicarOkCamper(elem.clickOkCamper);
+		mtd.fecharNavegador();
 	}
-	
 
 }

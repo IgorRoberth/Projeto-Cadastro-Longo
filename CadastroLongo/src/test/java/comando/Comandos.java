@@ -12,9 +12,17 @@ public class Comandos extends Browsers {
 	Metodos inter = new Metodos();
 	Elementos elem = new Elementos();
 
+	//Interações da Package Cadastro carro
+	
 	public void escolha(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
+	}
+	@SuppressWarnings("deprecation")
+	public void PerforCar(String texto, By elemento) {
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.name("[kW]")))
+					.sendKeys(texto);
+		
 	}
 
 	public void data(String texto, By elemento) {
@@ -117,12 +125,14 @@ public class Comandos extends Browsers {
 
 	// Interações da package Cadastro Caminhão
 
+	@SuppressWarnings("deprecation")
 	public void desempenho(String texto, By elemento) {
 
-		driver.findElement(elemento).sendKeys(texto);
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("engineperformance")))
+		.sendKeys(texto);
 
-	}
-
+    }
+	
 	public void caminFabricação(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
@@ -234,6 +244,14 @@ public class Comandos extends Browsers {
 
 		driver.findElement(elemento).sendKeys(texto);
 	}
+	
+	@SuppressWarnings("deprecation")
+	public void modelMoto(By elemento) {
+		
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#model > option:nth-child(4)")))
+		.click();
+    }
+	
 
 	public void desemMoto(String texto, By elemento) {
 
@@ -360,12 +378,10 @@ public class Comandos extends Browsers {
 
 	}
 
-	// Interações com a package CadastroCampista
-
+	@SuppressWarnings("deprecation")
 	public void escrPerforCarcamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
+		new WebDriverWait(driver, 20)
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#engineperformance"))).sendKeys(texto);
 	}
 
 	public void dataFabCamper(String texto, By elemento) {
@@ -420,34 +436,75 @@ public class Comandos extends Browsers {
 	public void endereCamper(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
-		
+
 	}
-	public void zipCodCamper (String texto, By elemento){
-		
-		driver.findElement(elemento).sendKeys(texto);
-	}
-	public void cityCamper (String texto, By elemento) {
+
+	public void zipCodCamper(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
 	}
-	public void OcupCamper (String texto, By elemento){
-	
+
+	public void cityCamper(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
-	public void localnaCamper (String texto, By elemento) {
-		
+
+	public void OcupCamper(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
 	}
-	public void dataIncCamper (String texto, By elemento) {
-		
+
+	public void localnaCamper(String texto, By elemento) {
+
 		driver.findElement(elemento).sendKeys(texto);
-	
 	}
+
+	public void dataIncCamper(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+
+	@SuppressWarnings("deprecation")
+	public void clicarOkCamper4(By elemento) {
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote")))
+				.click();
+	}
+
+	public void escreverEmail(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+
+	public void phoneCamper(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void userCamper(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+
+	}
+
+	public void passCamper(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	@SuppressWarnings("deprecation")
+	public void confPassCamper(String texto, By elemento) {
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#confirmpassword")))
+				.sendKeys(texto);
+
+	}
+
 	@SuppressWarnings("deprecation")
 	public void clicarOkCamper(By elemento) {
 		new WebDriverWait(driver, 20)
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
-						"#nextsendquote")))
+						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button")))
 				.click();
-   }
+	}
 }

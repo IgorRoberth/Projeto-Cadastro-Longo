@@ -1,7 +1,6 @@
 package executa;
 
 import java.io.IOException;
-
 import browsers.Browsers;
 import comando.Comandos;
 import elementos.Elementos;
@@ -18,11 +17,11 @@ public class CadastroCarro extends Browsers {
 	
 	
 	@Given("que entre no site {string}")
-	public void que_entre_no_site(String site) throws IOException, InterruptedException {
+	public void que_entre_no_site(String site) throws IOException{
 
 		// met.abrirNavegador("chrome", site);
-		//	met.abrirNavegador("Firefox", site);
-			met.abrirNavegador("Edge", site);
+        met.abrirNavegador("Firefox", site);
+		//	met.abrirNavegador("Edge", site);
 		met.clicar(ele.clicarAutomobile);
     //  met.screenShot("Clique automobile"); 
 		
@@ -39,7 +38,7 @@ public class CadastroCarro extends Browsers {
 	@When("informo o desempenho do motor")
 	public void informo_o_desempenho_do_motor() throws IOException {
 
-		coman.escolha("200", ele.Velo);
+		coman.PerforCar("200", ele.performance);
 	//	met.screenShot("Motor");
 
 	}

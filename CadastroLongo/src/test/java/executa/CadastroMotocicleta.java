@@ -20,8 +20,10 @@ public class CadastroMotocicleta extends Browsers {
 	@Given("que entre no site de seguros {string}")
 	public void que_entre_no_site_de_seguros(String site) {
 
-		metd.abrirNavegador("Chrome", site);
-		
+		//metd.abrirNavegador("Chrome", site);
+		  metd.abrirNavegador("Firefox", site);
+	    //metd.abrirNavegador("Edge", site); 
+		  
 	}
 
 	@When("clicar em motocicletas")
@@ -40,7 +42,7 @@ public class CadastroMotocicleta extends Browsers {
 	@When("escolher o modelo da moto")
 	public void escolher_o_modelo_da_moto() {
    
-		metd.clicar(element.modeloMoto);
+		comandos.modelMoto(element.modeloMoto);
 
 	}
 

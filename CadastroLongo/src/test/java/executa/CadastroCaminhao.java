@@ -18,7 +18,9 @@ public class CadastroCaminhao extends Browsers {
 	@Given("que entre no site e clico em caminhao {string}")
 	public void que_entre_no_site_e_clico_em_caminhao(String site) {
 
-		metodos.abrirNavegador("Chrome", site);
+	//  metodos.abrirNavegador("Chrome", site);
+		metodos.abrirNavegador("firefox", site);
+	//	metodos.abrirNavegador("Edge", site);
 		metodos.clicar(el.truck);
 
 	}
