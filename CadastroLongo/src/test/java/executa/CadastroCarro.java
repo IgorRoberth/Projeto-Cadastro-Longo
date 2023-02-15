@@ -19,8 +19,8 @@ public class CadastroCarro extends Browsers {
 	@Given("que entre no site {string}")
 	public void que_entre_no_site(String site) throws IOException{
 
-		// met.abrirNavegador("chrome", site);
-        met.abrirNavegador("Firefox", site);
+		 met.abrirNavegador("chrome", site);
+       // met.abrirNavegador("Firefox", site);
 		//	met.abrirNavegador("Edge", site);
 		met.clicar(ele.clicarAutomobile);
     //  met.screenShot("Clique automobile"); 

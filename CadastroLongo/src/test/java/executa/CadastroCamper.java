@@ -19,8 +19,8 @@ public class CadastroCamper extends Browsers{
 	public void que_entre_no_site_tricents(String site) throws InterruptedException {
 
 	 //	mtd.abrirNavegador("Chrome", site);
-	    mtd.abrirNavegador("Firefox", site);
-	 //	mtd.abrirNavegador("Edge", site);
+	 // mtd.abrirNavegador("Firefox", site);
+	 	mtd.abrirNavegador("Edge", site);
 	
 	}
 
