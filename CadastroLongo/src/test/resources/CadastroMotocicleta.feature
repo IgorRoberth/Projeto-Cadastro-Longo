@@ -3,7 +3,7 @@
 Feature: Como usuario desejo realizar cadastro do seguro de moto
   Eu como usuario quero executar o cadastro do seguro de moto
 
-  @cadastromotocicleta
+  @cadastromotocicleta @todos
   Scenario: Cadastrando seguro de moto
    Given que entre no site de seguros "http://sampleapp.tricentis.com/"
     When clicar em motocicletas

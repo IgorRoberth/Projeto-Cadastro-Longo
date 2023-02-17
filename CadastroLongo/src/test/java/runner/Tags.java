@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		//package dos steps
 		glue = "executa",
 		//tags que deseja executar
-		tags = "@cadastrocamper",
+		tags = "@todos",
 		//validar se existe gherckis sem steps
 		dryRun = false,
 		//pretty formatação do console para aparecer igual ao cucumber
