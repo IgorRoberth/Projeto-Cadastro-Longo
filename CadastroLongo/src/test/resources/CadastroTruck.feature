@@ -3,7 +3,7 @@
 Feature: Como usuario quero realizar o cadastro de seguro do caminhao
   Eu como usuario quero concluir cadastro de caminhao
 
-  @tag2
+  @cadastrocaminhao
   Scenario: Como usuario do site quero realizar o cadastro de caminhao
     Given que entre no site e clico em caminhao "http://sampleapp.tricentis.com/"
     When seleciono a marca desejada

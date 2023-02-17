@@ -4,7 +4,7 @@
 Feature: Cadastro automovel
   Eu como usuario do site quero cadastrar os dados do veiculo 
 
-  @tag1
+  @cadastrocarro
   Scenario: Como usuario do site quero realizar o cadastro de carro
     Given que entre no site "http://sampleapp.tricentis.com/"
     And que clico no veiculo desejado

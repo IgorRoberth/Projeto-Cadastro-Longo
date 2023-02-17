@@ -3,7 +3,7 @@
 Feature: Cadastro seguro camper 
     Eu como usuario desejo realizar cadastro de seguro campista  
 
-  @tag4
+  @cadastrocamper
   Scenario: Como usuario quero realizar um cadastro campista
     
    Given que entre no site tricents "http://sampleapp.tricentis.com"
