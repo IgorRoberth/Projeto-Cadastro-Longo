@@ -34,8 +34,5 @@ public class Browsers {
 			System.err.println("----- erro abrir navegador -----" + e.getMessage());
 			System.err.println("----- causa erro ------" + e.getMessage());
 		}
-
-	}
-
-	
+	}	
 }

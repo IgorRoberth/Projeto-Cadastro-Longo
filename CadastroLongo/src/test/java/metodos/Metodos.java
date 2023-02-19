@@ -13,8 +13,7 @@ public class Metodos extends Browsers {
 
 	public void screenShot(String nome) throws IOException {
 
-		// Código para tirar as evidências da interface web, para poder verificar se
-		// ocorreu algum erro e onde foi
+		// Código para tirar as evidências da interface web
 		TakesScreenshot srcShot = ((TakesScreenshot) driver);
 		File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
 		File desFile = new File("./src/EvidenciasCadastros/" + nome + ".png");
