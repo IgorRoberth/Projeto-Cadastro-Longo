@@ -270,10 +270,10 @@ public class CadastroCaminhao extends Browsers {
 	}
 
 	@Then("clico em next5")
-	public void clico_em_next5() {
+	public void clico_em_next5() throws InterruptedException {
 		
 		metodos.clicar(el.next5);
-	    mandos.clicarOkCaminhao(el.clicarOkCaminhao);
+        mandos.clicarOkCaminhao(el.clicarOkCaminhao);
 	    metodos.fecharNavegador();
 	}
 }
