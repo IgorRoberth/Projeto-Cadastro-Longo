@@ -323,4 +323,5 @@ public class Elementos {
     
     public By clickOkCamper = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
 
+    public By resultName = By.xpath("//div//*[text()='Sending e-mail success!']");
 }

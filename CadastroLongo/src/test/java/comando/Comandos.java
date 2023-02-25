@@ -12,115 +12,16 @@ public class Comandos extends Browsers {
 	Metodos inter = new Metodos();
 	Elementos elem = new Elementos();
 
-	//Interações da Package Cadastro carro
-	
-	public void escolha(String texto, By elemento) {
+	// Interações da Package Cadastro carro
+
+	public void escrever(String texto, By elemento) {
 
 		driver.findElement(elemento).sendKeys(texto);
 	}
+
 	@SuppressWarnings("deprecation")
 	public void PerforCar(String texto, By elemento) {
-			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.name("[kW]")))
-					.sendKeys(texto);
-		
-	}
-
-	public void data(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void list(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void placa(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void Km(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void primeiroNome(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void lastName(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void dataNascimento(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void endereco(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void cep(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void city(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void web(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void startDate(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void insurance(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void rating(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void email(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void phone(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void user(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void Senha(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void confirm(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.name("[kW]"))).sendKeys(texto);
 	}
 
 	// Interações da package Cadastro Caminhão
@@ -129,105 +30,7 @@ public class Comandos extends Browsers {
 	public void desempenho(String texto, By elemento) {
 
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("engineperformance")))
-		.sendKeys(texto);
-
-    }
-	
-	public void caminFabricação(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void camCargaUtil(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void camPeso(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void CamPreco(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void NumPlaca(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void kmcam(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void Nomecam(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void Sobrename(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void dateNasciCam(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void EndCam(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void CodiPost(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void CidCam(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void siteCAM(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void DataInicioCam(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void emailCamin(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void phonCamin(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void userCamin(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void senhaCamin(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void confiCamin(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
+				.sendKeys(texto);
 
 	}
 
@@ -240,80 +43,11 @@ public class Comandos extends Browsers {
 	}
 	// Interações package Cadastro Motocicleta
 
-	public void ciclindroMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-	
 	@SuppressWarnings("deprecation")
 	public void modelMoto(By elemento) {
-		
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#model > option:nth-child(4)")))
-		.click();
-    }
-	
 
-	public void desemMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void datFabMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void precoMotoTab(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void KMMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void nomeMotoCli(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void SobreNomeMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void daTNasciMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void endMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void cepMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void cidadeMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void redeMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void dataIniMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
+		new WebDriverWait(driver, 20)
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#model > option:nth-child(4)"))).click();
 	}
 
 	@SuppressWarnings("deprecation")
@@ -321,34 +55,6 @@ public class Comandos extends Browsers {
 
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote")))
 				.click();
-	}
-
-	public void emailMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void telMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void userMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void passMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void confirmPassMoto(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
 	}
 
 	@SuppressWarnings("deprecation")
@@ -366,7 +72,6 @@ public class Comandos extends Browsers {
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
 						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button	")))
 				.click();
-
 	}
 
 	@SuppressWarnings("deprecation")
@@ -375,7 +80,6 @@ public class Comandos extends Browsers {
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
 						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button")))
 				.click();
-
 	}
 
 	@SuppressWarnings("deprecation")
@@ -384,113 +88,10 @@ public class Comandos extends Browsers {
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#engineperformance"))).sendKeys(texto);
 	}
 
-	public void dataFabCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void cargUtCamp(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void pesoTotCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void precoTbCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void placaCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void anualCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void priNomeCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void sobreNomeCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void dateOfCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void endereCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void zipCodCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void cityCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void OcupCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void localnaCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void dataIncCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
 	@SuppressWarnings("deprecation")
 	public void clicarOkCamper4(By elemento) {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote")))
 				.click();
-	}
-
-	public void escreverEmail(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void phoneCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public void userCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
-
-	}
-
-	public void passCamper(String texto, By elemento) {
-
-		driver.findElement(elemento).sendKeys(texto);
 	}
 
 	@SuppressWarnings("deprecation")

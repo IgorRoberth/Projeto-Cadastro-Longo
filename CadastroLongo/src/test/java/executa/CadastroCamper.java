@@ -13,17 +13,12 @@ public class CadastroCamper extends Browsers{
 	Elementos elem = new Elementos();
 	Comandos cmd = new Comandos();
 	Metodos mtd = new Metodos();
-	
-	
-	@Given("que entre no site tricents {string}")
-	public void que_entre_no_site_tricents(String site) throws InterruptedException {
 
-	 //	mtd.abrirNavegador("Chrome", site);
-	 // mtd.abrirNavegador("Firefox", site);
-	 	mtd.abrirNavegador("Edge", site);
-	
+	@Given("que entre no site tricents")
+	public void que_entre_no_site_tricents() {
+
+		
 	}
-
 	@Given("clico em seguro campista")
 	public void clico_em_seguro_campista() {
  
@@ -48,7 +43,7 @@ public class CadastroCamper extends Browsers{
 	@When("digito a data de fabricacao")
 	public void digito_a_data_de_fabricacao() {
 
-		cmd.dataFabCamper("05/23/2019", elem.dataFabCamper);
+		cmd.escrever("05/23/2019", elem.dataFabCamper);
 
 	}
 
@@ -76,35 +71,35 @@ public class CadastroCamper extends Browsers{
 	@When("digito a carga util do veiculo")
 	public void digito_a_carga_util_do_veiculo() {
 
-		cmd.cargUtCamp("650", elem.cargUtCamper);
+		cmd.escrever("650", elem.cargUtCamper);
 
 	}
 
 	@When("digito o peso total do veiculo")
 	public void digito_o_peso_total_do_veiculo() {
 
-		cmd.pesoTotCamper("1560", elem.totalveicCamper);
+		cmd.escrever("1560", elem.totalveicCamper);
 
 	}
 
 	@When("informo preco de tabela")
 	public void informo_preco_de_tabela() {
 
-		cmd.precoTbCamper("12737", elem.precoTabCamper);
+		cmd.escrever("12737", elem.precoTabCamper);
 
 	}
 
 	@When("digito o numero da placa")
 	public void digito_o_numero_da_placa() {
 
-		cmd.placaCamper("40393902", elem.numPlacaCamper);
+		cmd.escrever("40393902", elem.numPlacaCamper);
 
 	}
 
 	@When("informo a quilometragem anual do veiculo")
 	public void informo_a_quilometragem_anual_do_veiculo() {
 
-		cmd.anualCamper("34230", elem.anualKmCamper);
+		cmd.escrever("34230", elem.anualKmCamper);
 
 	}
 
@@ -117,21 +112,21 @@ public class CadastroCamper extends Browsers{
 	@When("digitar primeiro nome camper")
 	public void digitar_primeiro_nome_camper() {
 
-        cmd.priNomeCamper("Roberto", elem.primNomeCamper);
+        cmd.escrever("Roberto", elem.primNomeCamper);
 		
 	}
 
 	@When("digitar sobrenome camper")
 	public void digitar_sobrenome_camper() {
 
-		cmd.sobreNomeCamper("Abilio", elem.nameSobreCamper);
+		cmd.escrever("Abilio", elem.nameSobreCamper);
 
 	}
 
 	@When("digitar data de nascimento camper")
 	public void digitar_data_de_nascimento_camper() {
 
-		cmd.dateOfCamper("07/12/1996", elem.dateCamperOf);
+		cmd.escrever("07/12/1996", elem.dateCamperOf);
 
 	}
 
@@ -145,7 +140,7 @@ public class CadastroCamper extends Browsers{
 	@When("digitar endereco")
 	public void digitar_endereco() {
 
-		cmd.endereCamper("Rua Beduino Valquirio Neto", elem.endrecoCamper);
+		cmd.escrever("Rua Beduino Valquirio Neto", elem.endrecoCamper);
 		
 	}
 
@@ -160,13 +155,13 @@ public class CadastroCamper extends Browsers{
 	@When("digitar codigo postal")
 	public void digitar_codigo_postal() {
 
-		cmd.zipCodCamper("4392012", elem.zipCodCamper);
+		cmd.escrever("4392012", elem.zipCodCamper);
 	}
 
 	@When("digitar cidade")
 	public void digitar_cidade() {
 		
-        cmd.cityCamper("La bem longe ", elem.CidCamper);
+        cmd.escrever("La bem longe ", elem.CidCamper);
 
 	}
 
@@ -187,7 +182,7 @@ public class CadastroCamper extends Browsers{
 	@When("local na rede internet")
 	public void local_na_rede_internet() {
 	    
-		cmd.localnaCamper("www.fhdjs.com.br", elem.redeInterCamper);
+		cmd.escrever("www.fhdjs.com.br", elem.redeInterCamper);
 	}
 
 	@Then("clico em next2")
@@ -198,7 +193,7 @@ public class CadastroCamper extends Browsers{
 	@When("informo a data de inicio do seguro camper")
 	public void informo_a_data_de_inicio_do_seguro_camper() {
 
-		cmd.dataIncCamper("05/20/2023", elem.inicSegCamper);
+		cmd.escrever("05/20/2023", elem.inicSegCamper);
 
 	}
 
@@ -248,28 +243,28 @@ public class CadastroCamper extends Browsers{
 	@When("digitar email do usuario camper")
 	public void digitar_email_do_usuario_camper() {
 
-		cmd.escreverEmail("abiliorob@gmail.com", elem.emailCamper);
+		cmd.escrever("abiliorob@gmail.com", elem.emailCamper);
 
 	}
 
 	@When("digitar celular do usuario camper")
 	public void digitar_celular_do_usuario_camper() {
 
-		cmd.phoneCamper("11983928393", elem.phoneCamper);
+		cmd.escrever("11983928393", elem.phoneCamper);
 
 	}
 
 	@When("criar o user do usuario camper")
 	public void criar_o_user_do_usuario_camper() {
 
-		cmd.userCamper("robuser21", elem.userNameCamper);
+		cmd.escrever("robuser21", elem.userNameCamper);
 
 	}
 
 	@When("criar senha do usuario camper")
 	public void criar_senha_do_usuario_camper() {
 
-		cmd.passCamper("Sl2394@3", elem.passCamp);
+		cmd.escrever("Sl2394@3", elem.passCamp);
 
 	}
 
@@ -285,7 +280,7 @@ public class CadastroCamper extends Browsers{
 
 		mtd.clicar(elem.finalizaCamper);
 		cmd.clicarOkCamper(elem.clickOkCamper);
-		mtd.fecharNavegador();
+		
 	}
 
 }

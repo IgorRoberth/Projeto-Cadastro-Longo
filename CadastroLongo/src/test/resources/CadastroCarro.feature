@@ -6,7 +6,7 @@ Feature: Cadastro automovel
 
   @cadastrocarro @todos
   Scenario: Como usuario do site quero realizar o cadastro de carro
-    Given que entre no site "http://sampleapp.tricentis.com/"
+    Given que entre no site
     And que clico no veiculo desejado
     When informo o desempenho do motor
     When informo a data de fabricacao

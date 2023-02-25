@@ -15,13 +15,9 @@ public class CadastroCarro extends Browsers {
 	Comandos coman = new Comandos();
 	Metodos met = new Metodos();
 	
-	
-	@Given("que entre no site {string}")
-	public void que_entre_no_site(String site) throws IOException{
-
-		 met.abrirNavegador("chrome", site);
-       // met.abrirNavegador("Firefox", site);
-		//	met.abrirNavegador("Edge", site);
+	@Given("que entre no site")
+	public void que_entre_no_site() {
+		
 		met.clicar(ele.clicarAutomobile);
     //  met.screenShot("Clique automobile"); 
 		
@@ -46,7 +42,7 @@ public class CadastroCarro extends Browsers {
 	@When("informo a data de fabricacao")
 	public void informo_a_data_de_fabricacao() throws IOException {
 	    
-		coman.data("01/01/2022", ele.date);
+		coman.escrever("01/01/2022", ele.date);
 	//	met.screenShot("Data Fabricação");
 	
 	}
@@ -70,7 +66,7 @@ public class CadastroCarro extends Browsers {
 	@When("o preco de tabela")
 	public void o_preco_de_tabela() throws IOException {
 
-		coman.list("55000", ele.list);
+		coman.escrever("55000", ele.list);
 	//  met.screenShot("o preço de tabela");
 
 	}
@@ -78,7 +74,7 @@ public class CadastroCarro extends Browsers {
 	@When("numero da placa")
 	public void numero_da_placa() throws IOException {
 	    
-		coman.placa("GFP1029", ele.placa);
+		coman.escrever("GFP1029", ele.placa);
 	 //	met.screenShot("numero placa");	
 
 	}
@@ -86,7 +82,7 @@ public class CadastroCarro extends Browsers {
 	@When("quilometragem anual")
 	public void quilometragem_anual() throws IOException {
 
-		coman.Km("25000", ele.kmAnual);
+		coman.escrever("25000", ele.kmAnual);
 	//	met.screenShot("Quilometragem anual");
 
 	}
@@ -102,7 +98,7 @@ public class CadastroCarro extends Browsers {
 	@When("digito primeiro nome")
 	public void digito_primeiro_nome() throws IOException {
 	    
-		coman.primeiroNome("Elisio", ele.firstname);
+		coman.escrever("Elisio", ele.firstname);
 	//	met.screenShot("Primeiro nome");
 		
 	}
@@ -110,14 +106,14 @@ public class CadastroCarro extends Browsers {
 	@When("digito sobrenome")
 	public void digito_sobrenome() throws IOException {
  
-		coman.lastName("Braga", ele.lastN);
+		coman.escrever("Braga", ele.lastN);
      // met.screenShot("Digito sobre nome");
 	}
 
 	@When("informo data de nascimento")
 	public void informo_data_de_nascimento() throws IOException {
 	   
-		coman.dataNascimento("02/03/1989", ele.dataNas);
+		coman.escrever("02/03/1989", ele.dataNas);
 	 // met.screenShot("Data de nascimento");
 	}
 
@@ -132,7 +128,7 @@ public class CadastroCarro extends Browsers {
 	@When("digito endereco")
 	public void digito_endereco() throws IOException {
 
-		coman.endereco("Jardim Santa Rosa", ele.ende);
+		coman.escrever("Jardim Santa Rosa", ele.ende);
    //   met.screenShot("Digito endereço");
 	}
 	@When("seleciono a nacionalidade")
@@ -145,14 +141,14 @@ public class CadastroCarro extends Browsers {
 	@When("digito cep")
 	public void digito_cep() throws IOException {
 
-		coman.cep("14808192", ele.cep);
+		coman.escrever("14808192", ele.cep);
     //  met.screenShot("CEP");		
 	}
 
 	@When("digito a cidade")
 	public void digito_a_cidade() throws IOException {
 
-		coman.city("Carambolas", ele.city);
+		coman.escrever("Carambolas", ele.city);
     //  met.screenShot("Cidade");
 	}
 
@@ -173,7 +169,7 @@ public class CadastroCarro extends Browsers {
 	@When("digito o site")
 	public void digito_o_site() throws IOException {
 
-		coman.web("www.ricardodanilo.com.br", ele.webSite);
+		coman.escrever("www.ricardodanilo.com.br", ele.webSite);
      // met.screenShot("Informo o site");
 	}
 
@@ -187,14 +183,14 @@ public class CadastroCarro extends Browsers {
 	@When("digito a data de inicio")
 	public void digito_a_data_de_inicio() throws IOException {
 
-		coman.startDate("04/06/2023", ele.startDate);
+		coman.escrever("04/06/2023", ele.startDate);
       //met.screenShot("Data inicio");
 	}
 
 	@When("informo a soma do seguro")
 	public void informo_a_soma_do_seguro() throws IOException {
 
-		coman.insurance("3.000.000,00", ele.Sum);
+		coman.escrever("3.000.000,00", ele.Sum);
      // met.screenShot("Informe soma seguro");
 	}
 
@@ -251,14 +247,14 @@ public class CadastroCarro extends Browsers {
 	@When("digito o email")
 	public void digito_o_email() throws IOException {
 		
-		coman.email("daniel_figueiredo@tglaw.com.br", ele.email);
+		coman.escrever("daniel_figueiredo@tglaw.com.br", ele.email);
      // met.screenShot("Informe e-mail");
 	}
 
 	@When("digito o celular")
 	public void digito_o_celular() throws IOException {
 		
-		coman.phone("11981715491", ele.cel);
+		coman.escrever("11981715491", ele.cel);
      // met.screenShot("Informe Celular");
 
 	}
@@ -266,21 +262,21 @@ public class CadastroCarro extends Browsers {
 	@When("digito o usuario")
 	public void digito_o_usuario() throws IOException {
 		
-		coman.user("daniel.123", ele.userName);	
+		coman.escrever("daniel.123", ele.userName);	
      // met.screenShot("Informe usuário");		
 	}
 
 	@When("digito a senha")
 	public void digito_a_senha() throws IOException {
 
-		coman.Senha("u;p@G$7coi", ele.pass	);
+		coman.escrever("u;p@G$7coi", ele.pass	);
       //met.screenShot("Informe senha");
 	}
 
 	@When("confirmo a senha")
 	public void confirmo_a_senha() throws IOException {
 
-		coman.confirm("u;p@G$7coi", ele.confirmPass);
+		coman.escrever("u;p@G$7coi", ele.confirmPass);
      // met.screenShot("Confirme senha");
 	}
 
@@ -288,10 +284,9 @@ public class CadastroCarro extends Browsers {
 	public void clico_em_mandar() throws IOException {
 		
 		met.clicar(ele.finalizado);
-      //  met.screenShot("Conclue o cadastro e valido a mensagem retornada");		
+	//	met.screenShot("Finalizado");
 	    coman.clicarOkFimCarro(ele.clicarokCarro);
-	    met.fecharNavegador();
-	 
+
 	}
 
 }

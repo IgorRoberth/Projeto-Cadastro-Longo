@@ -5,7 +5,7 @@ Feature: Como usuario quero realizar o cadastro de seguro do caminhao
 
   @cadastrocaminhao @todos
   Scenario: Como usuario do site quero realizar o cadastro de caminhao
-    Given que entre no site e clico em caminhao "http://sampleapp.tricentis.com/"
+    Given que entre no site e clico em caminhao
     When seleciono a marca desejada
     When informo o desempenho do motor do caminhao
     When informo a data de fabricacao do caminhao

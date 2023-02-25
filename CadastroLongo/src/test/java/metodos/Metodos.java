@@ -26,12 +26,7 @@ public class Metodos extends Browsers {
 			driver.findElement(elemento).click();
 		} catch (Exception e) {
 			System.err.println("-------erro ao clicar---------" + e.getMessage());
-			System.err.println("-------causa do erro---------" + e.getCause());	
+			System.err.println("-------causa do erro---------" + e.getCause());
 		}
-}
-
-	public void fecharNavegador() {
-		driver.quit();
-
-	}	
+	}
 }

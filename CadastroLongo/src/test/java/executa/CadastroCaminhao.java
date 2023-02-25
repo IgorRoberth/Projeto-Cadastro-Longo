@@ -3,6 +3,8 @@ package executa;
 import browsers.Browsers;
 import comando.Comandos;
 import elementos.Elementos;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,13 +16,22 @@ public class CadastroCaminhao extends Browsers {
 	Comandos mandos = new Comandos();
 	Metodos metodos = new Metodos();
 	
-
-	@Given("que entre no site e clico em caminhao {string}")
-	public void que_entre_no_site_e_clico_em_caminhao(String site) {
-
-	    metodos.abrirNavegador("Chrome", site);
-	//	metodos.abrirNavegador("firefox", site);
-	//	metodos.abrirNavegador("Edge", site);
+	@Before
+	public void inicioTeste() {
+	
+		Browsers.abrirNavegador();		
+	}
+	
+	@After
+	public void finalizandoTeste() {
+		
+		Browsers.fecharNavegador();
+	}
+	
+	@Given("que entre no site e clico em caminhao")
+	public void que_entre_no_site_e_clico_em_caminhao() {
+		
+		
 		metodos.clicar(el.truck);
 
 	}
@@ -42,7 +53,7 @@ public class CadastroCaminhao extends Browsers {
 	@When("informo a data de fabricacao do caminhao")
 	public void informo_a_data_de_fabricacao_do_caminhao() {
 
-		mandos.caminFabricação("12/03/2020", el.caFab);
+		mandos.escrever("12/03/2020", el.caFab);
 
 	}
 
@@ -63,35 +74,35 @@ public class CadastroCaminhao extends Browsers {
 	@When("informo carga util")
 	public void informo_carga_util() {
 
-		mandos.camCargaUtil("1000", el.CamCarg);
+		mandos.escrever("1000", el.CamCarg);
 
 	}
 
 	@When("informo peso total")
 	public void informo_peso_total() {
 
-		mandos.camPeso("23000", el.CamPeso);
+		mandos.escrever("23000", el.CamPeso);
 
 	}
 
 	@When("o preco de tabela do caminhao")
 	public void o_preco_de_tabela_do_caminhao() {
 
-		mandos.CamPreco("100000", el.precoCam);
+		mandos.escrever("100000", el.precoCam);
 
 	}
 
 	@When("numero da placa do caminhao")
 	public void numero_da_placa_do_caminhao() {
 
-		mandos.NumPlaca("NEV-8210", el.numPlaca);
+		mandos.escrever("NEV-8210", el.numPlaca);
 
 	}
 
 	@When("quilometragem anual do caminhao")
 	public void quilometragem_anual_do_caminhao() {
 
-		mandos.kmcam("81450", el.CamKM);
+		mandos.escrever("81450", el.CamKM);
 
 	}
 
@@ -105,20 +116,20 @@ public class CadastroCaminhao extends Browsers {
 	@When("digito o nome")
 	public void digito_o_nome() {
 
-		mandos.Nomecam("Deverio", el.nomeCam);
+		mandos.escrever("Deverio", el.nomeCam);
 
 	}
 
 	@When("digito o sobrenome")
 	public void digito_o_sobrenome() {
 
-		mandos.Sobrename("Cardoso", el.sobreName);
+		mandos.escrever("Cardoso", el.sobreName);
 	}
 
 	@When("informo a data de nascimento")
 	public void informo_a_data_de_nascimento() {
 
-		mandos.dateNasciCam("11/04/1993", el.dataNasciCam);
+		mandos.escrever("11/04/1993", el.dataNasciCam);
 
 	}
 
@@ -132,7 +143,7 @@ public class CadastroCaminhao extends Browsers {
 	@When("digito endereco desejado")
 	public void digito_endereco_desejado() {
 
-		mandos.EndCam("Rua Belchior Chavão Neto", el.endCam);
+		mandos.escrever("Rua Belchior Chavão Neto", el.endCam);
 
 	}	
 	@When("seleciono o pais")
@@ -145,13 +156,13 @@ public class CadastroCaminhao extends Browsers {
 	@When("digito o	cep local")
 	public void digito_o_cep_local() {
 		
-		mandos.CodiPost("3893850", el.CodPost);
+		mandos.escrever("3893850", el.CodPost);
 
 	}
 	@When("insiro a cidade desejada")
 	public void insiro_a_cidade_desejada() {
 		
-		mandos.CidCam("Sorocaba", el.cityCam);
+		mandos.escrever("Sorocaba", el.cityCam);
 
 	}
 	@When("seleciono ocupacao melhor para o momento")
@@ -173,7 +184,7 @@ public class CadastroCaminhao extends Browsers {
 	@When("insiro o site escolhido")
 	public void insiro_o_site_escolhido() {
 		
-		mandos.siteCAM("www.deveriocardoso.com.br", el.SiteCam);
+		mandos.escrever("www.deveriocardoso.com.br", el.SiteCam);
 
 	}
 
@@ -188,7 +199,7 @@ public class CadastroCaminhao extends Browsers {
 	public void digito_a_data_de_inicio_do_seguro() {
 		
 		
-		mandos.DataInicioCam("04/15/2023", el.DataCamincio);
+		mandos.escrever("04/15/2023", el.DataCamincio);
 
 	}
 
@@ -238,42 +249,42 @@ public class CadastroCaminhao extends Browsers {
 	@When("digito o email escolhido")
 	public void digito_o_email_escolhido() {
 		
-	  mandos.emailCamin("siberiochavao@gmail.com", el.emailCaminhao);	
+	  mandos.escrever("siberiochavao@gmail.com", el.emailCaminhao);	
 
 	}
 
 	@When("digito o celular escolhido")
 	public void digito_o_celular_escolhido() {
 
-		mandos.phonCamin("11954239467", el.phoneCamin);
+		mandos.escrever("11954239467", el.phoneCamin);
 	}
 
 	@When("digito o usuario desejado")
 	public void digito_o_usuario_desejado() {
 		
-		mandos.userCamin("siberioChavao", el.userSib);
+		mandos.escrever("siberioChavao", el.userSib);
 
 	}
 
 	@When("digito a senha desejada")
 	public void digito_a_senha_desejada() {
 		
-		mandos.senhaCamin("Sib@123456!A", el.passCamin);
+		mandos.escrever("Sib@123456!A", el.passCamin);
 
 	}
 
 	@When("confirmo a senha desejada")
 	public void confirmo_a_senha_desejada() {
 		
-		mandos.confiCamin("Sib@123456!A", el.confirPassCamin);
+		mandos.escrever("Sib@123456!A", el.confirPassCamin);
 
 	}
 
 	@Then("clico em next5")
-	public void clico_em_next5() throws InterruptedException {
+	public void clico_em_next5() {
 		
 		metodos.clicar(el.next5);
         mandos.clicarOkCaminhao(el.clicarOkCaminhao);
-	    metodos.fecharNavegador();
+	  
 	}
 }

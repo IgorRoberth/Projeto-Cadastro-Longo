@@ -5,8 +5,8 @@ Feature: Como usuario desejo realizar cadastro do seguro de moto
 
   @cadastromotocicleta @todos
   Scenario: Cadastrando seguro de moto
-   Given que entre no site de seguros "http://sampleapp.tricentis.com/"
-    When clicar em motocicletas
+   Given que entre no site de seguros 
+    And clicar em motocicletas
     When selecione a marca da moto
     When escolher o modelo da moto
     When informar a capacidade de cilindro
