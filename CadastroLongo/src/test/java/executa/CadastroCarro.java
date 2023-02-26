@@ -68,9 +68,10 @@ public class CadastroCarro extends Browsers {
 	}
 
 	@Then("finalizar cadastro")
-	public void finalizar_cadastro() {
+	public void finalizar_cadastro() throws InterruptedException {
 
 		met.clicar(ele.finalizado);
+		coman.validaTexto(ele.resultName, "Sending e-mail success!");
 		coman.clicarOkFimCarro(ele.clicarokCarro);
 
 	}

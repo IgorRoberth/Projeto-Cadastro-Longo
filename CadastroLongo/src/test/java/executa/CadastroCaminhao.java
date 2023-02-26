@@ -87,6 +87,7 @@ public class CadastroCaminhao extends Browsers {
 	public void finallizar_cadastro_caminhao() {
 
 		metodos.clicar(el.next5);
+		mandos.validaTexto(el.resultName, "Sending e-mail success!");
 		mandos.clicarOkCaminhao(el.clicarOkCaminhao);
 	}
 

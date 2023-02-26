@@ -70,8 +70,7 @@ public class CadastroCamper extends Browsers{
 	public void finalizo_o_cadastro() {
 
 		 mtd.clicar(elem.finalizaCamper);
+		 cmd.validaTexto(elem.resultName, "Sending e-mail success!");
 		 cmd.clicarOkCamper(elem.clickOkCamper);
-
 	}
-
 }

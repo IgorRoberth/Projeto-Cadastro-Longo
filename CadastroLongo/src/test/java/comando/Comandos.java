@@ -1,8 +1,12 @@
 package comando;
 
+import static org.junit.Assert.assertTrue;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import browsers.Browsers;
 import elementos.Elementos;
 import metodos.Metodos;
@@ -108,4 +112,13 @@ public class Comandos extends Browsers {
 						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button")))
 				.click();
 	}
-}
+	public void validaTexto(By elemento, String textoEsperado) {
+		
+		WebElement element;
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Sending e-mail success!']")));
+
+		String textoCapturado = driver.findElement(elemento).getText();
+		assertTrue(textoCapturado.contains(textoEsperado));
+	}
+}	

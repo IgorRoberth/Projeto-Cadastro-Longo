@@ -68,6 +68,7 @@ public class CadastroMotocicleta extends Browsers {
 	public void confirmar_cadastro() {
 
 		metd.clicar(element.proxMoto5);
+		comandos.validaTexto(element.resultName, "Sending e-mail success!");
 		comandos.clicarOkMoto(element.clicaOkMoto);
 	}
 }
