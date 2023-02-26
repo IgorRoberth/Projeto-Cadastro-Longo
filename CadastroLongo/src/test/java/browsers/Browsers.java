@@ -15,14 +15,14 @@ public class Browsers {
 		String navegador = "chrome";
 
 		if (navegador.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (navegador.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(8));
 		} else if (navegador.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver", "C:\\Driver\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
 			driver = new EdgeDriver();
 		} else {
 			System.out.println("Digite driver desejado na String navegador");
@@ -35,7 +35,5 @@ public class Browsers {
 	public static void fecharNavegador() {
 
 		driver.quit();
-	}
-	
-
+	}	
 }
