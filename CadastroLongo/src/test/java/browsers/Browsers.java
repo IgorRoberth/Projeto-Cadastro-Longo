@@ -11,32 +11,24 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class Browsers {
 
 	protected static WebDriver driver;
-	
+
 	public static void abrirNavegador() {
 
 		String site = "http://sampleapp.tricentis.com";
-		String navegador = "chrome";
-		
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setHeadless(true);
-		
-		FirefoxOptions firefoxOptions = new FirefoxOptions();
-		firefoxOptions.setHeadless(true);
-		
-		EdgeOptions edgeOptions = new EdgeOptions();
-		edgeOptions.setCapability("useAutomationExtension", false);
-		edgeOptions.setHeadless(true);
-		
+		String navegador = "edge";
+
 		if (navegador.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			// Configurações para o Chrome headless
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.setHeadless(false);
 			chromeOptions.addArguments("--disable-gpu");
 			chromeOptions.addArguments("--window-size=1400,800");
 			WebDriver chromeDriver = new ChromeDriver(chromeOptions);
 			driver = chromeDriver;
 		} else if (navegador.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
-			// Configurações para o Firefox headless
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			firefoxOptions.setHeadless(false);
 			firefoxOptions.addArguments("--disable-gpu");
 			firefoxOptions.addArguments("--window-size=1400,800");
 			WebDriver firefoxDriver = new FirefoxDriver(firefoxOptions);
@@ -44,19 +36,18 @@ public class Browsers {
 			driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 		} else if (navegador.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
-			// Configurações para o Edge headless
+			EdgeOptions edgeOptions = new EdgeOptions();
+			edgeOptions.setCapability("useAutomationExtension", false);
+			edgeOptions.setHeadless(false);
 			edgeOptions.addArguments("--disable-gpu");
 			edgeOptions.addArguments("--window-size=1400,800");
 			WebDriver edgeDriver = new EdgeDriver(edgeOptions);
 			driver = edgeDriver;
-		} else {
-			System.out.println("Digite driver desejado na String navegador");
 		}
-		// Código para reter o https que está registrado na Feature
 		driver.get(site);
-		// Código para maximizar a tela web
 		driver.manage().window().maximize();
 	}
+
 	public static void fecharNavegador() {
 
 		driver.quit();

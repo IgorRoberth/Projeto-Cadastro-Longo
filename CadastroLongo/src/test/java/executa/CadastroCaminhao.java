@@ -25,7 +25,7 @@ public class CadastroCaminhao extends Browsers {
 	@After
 	public void finalizandoTeste() {
 
-	//	Browsers.fecharNavegador();
+		Browsers.fecharNavegador();
 
 	}
 
