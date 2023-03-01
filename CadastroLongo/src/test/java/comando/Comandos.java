@@ -1,12 +1,10 @@
 package comando;
 
 import static org.junit.Assert.assertTrue;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import browsers.Browsers;
 import elementos.Elementos;
 import metodos.Metodos;
@@ -33,7 +31,7 @@ public class Comandos extends Browsers {
 	@SuppressWarnings("deprecation")
 	public void desempenho(String texto, By elemento) {
 
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("engineperformance")))
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.name("[kW]")))
 				.sendKeys(texto);
 
 	}
@@ -41,7 +39,7 @@ public class Comandos extends Browsers {
 	@SuppressWarnings("deprecation")
 	public void next4Cli(By elemento) {
 
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nextsendquote")))
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("nextsendquote")))
 				.click();
 
 	}
@@ -121,4 +119,9 @@ public class Comandos extends Browsers {
 		String textoCapturado = driver.findElement(elemento).getText();
 		assertTrue(textoCapturado.contains(textoEsperado));
 	}
-}	
+	public void downDoc (By elemento) { 
+	new WebDriverWait(driver, 20)
+	.until(ExpectedConditions.elementToBeClickable(By.id("nextsendquote")))
+	.click();
+	}	
+}

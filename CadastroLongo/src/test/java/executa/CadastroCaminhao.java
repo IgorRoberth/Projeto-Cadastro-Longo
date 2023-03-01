@@ -25,7 +25,7 @@ public class CadastroCaminhao extends Browsers {
 	@After
 	public void finalizandoTeste() {
 
-		Browsers.fecharNavegador();
+	//	Browsers.fecharNavegador();
 
 	}
 
@@ -90,5 +90,4 @@ public class CadastroCaminhao extends Browsers {
 		mandos.validaTexto(el.resultName, "Sending e-mail success!");
 		mandos.clicarOkCaminhao(el.clicarOkCaminhao);
 	}
-
 }

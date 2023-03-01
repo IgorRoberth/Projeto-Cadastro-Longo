@@ -3,7 +3,7 @@
 Feature: Cadastro seguro
   Eu como usuario desejo cadastrar veiculo no site
 
-  @cadastrocarro 
+  @carro 
   Scenario: Como usuario do site quero realizar o cadastro de carro
   
   Given que entre no site para cadastrar carro
@@ -11,7 +11,7 @@ Feature: Cadastro seguro
    When realizar cadastro
    Then finalizar cadastro
 
-  @cadastrocaminhao
+  @caminhao
   Scenario: Como usuario do site quero realizar o cadastro de caminhao
     
     Given que entre no site para cadastrar caminhao
@@ -19,7 +19,7 @@ Feature: Cadastro seguro
     When realizar cadastro caminhao
     Then finallizar cadastro caminhao
       
-  @cadastromotocicleta
+  @motocicleta
   Scenario: Cadastrando seguro de moto
    
    Given que entre no site para cadastrar moto
@@ -27,7 +27,7 @@ Feature: Cadastro seguro
     When executar cadastro
     Then confirmar cadastro
     
-  @cadastrocamper
+  @camper
   Scenario: Como usuario quero realizar um cadastro campista
     
    Given que entre no site para cadastrar camper

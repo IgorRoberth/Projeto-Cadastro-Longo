@@ -93,7 +93,7 @@ public class Elementos {
 
 	public By Marca = By.cssSelector("#make > option:nth-child(14)");
 
-	public By Desemp = By.id("engineperformance");
+	public By Desemp = By.cssSelector("#engineperformance");
 
 	public By caFab = By.cssSelector("#dateofmanufacture");
 
@@ -249,7 +249,7 @@ public class Elementos {
 	
 	public By marcaVeiculo = By.cssSelector("#make > option:nth-child(5)");
 	
-	public By performCarCamper = By.cssSelector("#engineperformance"); 
+	public By performCarCamper = By.name("[kW]");
 	
 	public By dataFabCamper = By.cssSelector("#dateofmanufacture");
 	
