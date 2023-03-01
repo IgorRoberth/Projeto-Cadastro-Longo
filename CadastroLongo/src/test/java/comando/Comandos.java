@@ -110,8 +110,9 @@ public class Comandos extends Browsers {
 						"body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button")))
 				.click();
 	}
+	@SuppressWarnings("deprecation")
 	public void validaTexto(By elemento, String textoEsperado) {
-		
+			
 		WebElement element;
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Sending e-mail success!']")));
@@ -119,9 +120,4 @@ public class Comandos extends Browsers {
 		String textoCapturado = driver.findElement(elemento).getText();
 		assertTrue(textoCapturado.contains(textoEsperado));
 	}
-	public void downDoc (By elemento) { 
-	new WebDriverWait(driver, 20)
-	.until(ExpectedConditions.elementToBeClickable(By.id("nextsendquote")))
-	.click();
-	}	
 }
