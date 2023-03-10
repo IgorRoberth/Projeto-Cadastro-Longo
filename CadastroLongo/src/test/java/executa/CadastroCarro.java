@@ -50,7 +50,7 @@ public class CadastroCarro extends Browsers {
 		met.clicar(ele.Hobbies);
 		coman.escrever("www.ricardodanilo.com.br", ele.webSite);
 		met.clicar(ele.clicarProximo);
-		coman.escrever("04/06/2023", ele.startDate);
+		coman.escrever("05/18/2023", ele.startDate);
 		coman.escrever("3.000.000,00", ele.Sum);
 		met.clicar(ele.merito);
 		met.clicar(ele.damange);

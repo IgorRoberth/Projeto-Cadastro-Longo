@@ -22,7 +22,7 @@ public class Browsers {
 	public static void abrirNavegador() {
 
 		String site = "http://sampleapp.tricentis.com";
-		String navegador = "Edge";
+		String navegador = "Chrome";
 
 		if (navegador.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
@@ -30,12 +30,13 @@ public class Browsers {
 			chromeOptions.setHeadless(false);
 			chromeOptions.addArguments("--disable-gpu");
 			chromeOptions.addArguments("--window-size=1400,800");
+			chromeOptions.addArguments("--remote-allow-origins=*");
 			WebDriver chromeDriver = new ChromeDriver(chromeOptions);
 			driver = chromeDriver;
 		} else if (navegador.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.setHeadless(false);
+			firefoxOptions.setHeadless(true);
 			firefoxOptions.addArguments("--disable-gpu");
 			firefoxOptions.addArguments("--window-size=1400,800");
 			WebDriver firefoxDriver = new FirefoxDriver(firefoxOptions);
