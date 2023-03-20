@@ -1,28 +1,22 @@
 package browsers;
 
-import java.time.Duration;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.v85.browser.Browser;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+import drivers.DriverConect;
 
-public class Browsers {
-
-	protected static WebDriver driver;
+public class Browsers extends DriverConect{
 
 	@BeforeClass
-	public static void abrirNavegador() {
+	public static void abrirNavegador(String navegador) {
 
 		String site = "http://sampleapp.tricentis.com";
-		String navegador = "Chrome";
 
 		if (navegador.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
@@ -36,7 +30,7 @@ public class Browsers {
 		} else if (navegador.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.setHeadless(true);
+			firefoxOptions.setHeadless(false);
 			firefoxOptions.addArguments("--disable-gpu");
 			firefoxOptions.addArguments("--window-size=1400,800");
 			WebDriver firefoxDriver = new FirefoxDriver(firefoxOptions);
@@ -46,7 +40,7 @@ public class Browsers {
 			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
 			EdgeOptions edgeOptions = new EdgeOptions();
 			edgeOptions.setCapability("useAutomationExtension", false);
-			edgeOptions.setHeadless(true);
+			edgeOptions.setHeadless(false);
 			edgeOptions.addArguments("--disable-gpu");
 			edgeOptions.addArguments("--window-size=1400,800");
 			WebDriver edgeDriver = new EdgeDriver(edgeOptions);
