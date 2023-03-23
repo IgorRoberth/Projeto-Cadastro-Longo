@@ -41,7 +41,7 @@ public class CadastroCarro extends DriverConect {
 	}
 
 	@When("realizar cadastro")
-	public void realizar_cadastro() {
+	public void realizar_cadastro() throws InterruptedException {
 
 		met.clicar(PageCarro.selecionarCarro);
 		met.escreverCmEspera("200", PageCarro.performance);
@@ -62,7 +62,10 @@ public class CadastroCarro extends DriverConect {
 		met.escrever("Carambolas", PageCarro.city);
 		met.clicar(PageCarro.occupation);
 		met.clicar(PageCarro.Hobbies);
-	 	met.escrever("www.ricardodanilo.com.br", PageCarro.webSite);
+		met.escrever("www.ricardodanilo.com.br", PageCarro.webSite);
+		met.clicar(PageCarro.openPicture);
+		Thread.sleep(2000);
+		Metodos.uploadFile("C:\\Users\\igorr\\OneDrive\\Documents\\CNHRegras\\cnhcbncg", 0);
 		met.clicar(PageCarro.clicarProximo);
 	    met.escrever("05/18/2023", PageCarro.startDate);
 	    met.escrever("3.000.000,00", PageCarro.Sum);

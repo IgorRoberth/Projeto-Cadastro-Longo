@@ -50,6 +50,8 @@ public class PageCaminhao {
 
 		public static By hobCamParaquedismo = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(4)");
 
+		public static By abrirImagem = By.cssSelector("button[id=\"open\"]");
+		
 		public static By SiteCam = By.cssSelector("#website");
 
 		public static By next2 = By.cssSelector("#nextenterproductdata");

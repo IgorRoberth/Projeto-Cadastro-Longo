@@ -75,6 +75,24 @@ public class Metodos extends Browsers {
 		}
 	}
 	
+	public static void uploadFile(String filePath, int waitTime) {
+		try {
+			Robot robot = new Robot();
+			StringSelection ss = new StringSelection(filePath);
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.delay(2000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			robot.delay(waitTime);
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public void validaTexto(By elemento, String textoEsperado) {
 
 		WebElement element;

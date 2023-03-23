@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources",
 		glue = "executa",
-		tags = "@todos",
+		tags = "@caminhao",
 		dryRun = false,
 		plugin = {"pretty", "html:target/report.html"},
 		monochrome = true

@@ -1,10 +1,7 @@
 package executa;
 
-import browsers.Browsers;
 import drivers.DriverConect;
 import elementos.PageCaminhao;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,7 +24,7 @@ public class CadastroCaminhao extends DriverConect {
 	}
 
 	@When("realizar cadastro caminhao")
-	public void realizar_cadastro_caminhao() {
+	public void realizar_cadastro_caminhao() throws InterruptedException {
 
 		Metodos.clicar(PageCaminhao.MarcaCaminhao);
 		Metodos.escreverCmEspera("263", PageCaminhao.Desemp);
@@ -51,7 +48,10 @@ public class CadastroCaminhao extends DriverConect {
 		Metodos.clicar(PageCaminhao.OcupCam);
 		Metodos.clicar(PageCaminhao.hobCamExcesso);
 		Metodos.clicar(PageCaminhao.hobCamParaquedismo);
-		Metodos.escreverCmEspera("www.deveriocardoso.com.br", PageCaminhao.SiteCam);
+        Metodos.escreverCmEspera("www.deveriocardoso.com.br", PageCaminhao.SiteCam);
+        Metodos.clicar(PageCaminhao.abrirImagem);
+        Thread.sleep(2000);
+        Metodos.uploadFile("C:\\Users\\igorr\\OneDrive\\Documents\\CNH2\\cnh2", 0);
 		Metodos.clicar(PageCaminhao.next2);
 		Metodos.escreverCmEspera("07/15/2023", PageCaminhao.DataCamincio);
 		Metodos.clicar(PageCaminhao.ValorseguroCAM);

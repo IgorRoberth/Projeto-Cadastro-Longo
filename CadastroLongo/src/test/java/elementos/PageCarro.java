@@ -48,6 +48,8 @@ public class PageCarro {
 
 	public static By webSite = By.cssSelector("#website");
 
+	public static By openPicture = By.cssSelector("button[class=\"ideal-file-upload\"]");
+	
 	public static By clicarProximo = By.cssSelector("#nextenterproductdata");
 
 	public static By startDate = By.cssSelector("#startdate");
