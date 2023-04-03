@@ -46,12 +46,12 @@ public class Metodos extends Browsers {
 
 	}
 
-	public void escrever(String texto, By elemento) {
+	public void escrever(By elemento, String texto) {
 
 		driver.findElement(elemento).sendKeys(texto);
 	}
 
-	public void escreverCmEspera(String texto, By elemento) {
+	public void escreverCmEspera(By elemento ,String texto) {
 		new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(elemento)).sendKeys(texto);
 
 	}

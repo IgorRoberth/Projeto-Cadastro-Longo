@@ -44,31 +44,31 @@ public class CadastroCarro extends DriverConect {
 	public void realizar_cadastro() throws InterruptedException {
 
 		met.clicar(PageCarro.selecionarCarro);
-		met.escreverCmEspera("200", PageCarro.performance);
-		met.escrever("01/01/2022", PageCarro.date);
+		met.escreverCmEspera(PageCarro.performance, "200");
+		met.escrever(PageCarro.date, "01/01/2022");
 		met.clicar(PageCarro.assentos);
 		met.clicar(PageCarro.type);
-		met.escrever("55000", PageCarro.list);
-	    met.escrever("GFP1029", PageCarro.placa);
-		met.escrever("25000", PageCarro.kmAnual);
+		met.escrever(PageCarro.list, "55000");
+	    met.escrever(PageCarro.placa, "GFP1029");
+		met.escrever(PageCarro.kmAnual, "25000");
 		met.clicar(PageCarro.next);
-	 	met.escrever("Elisio", PageCarro.firstname);
-	    met.escrever("Braga", PageCarro.lastN);
-		met.escrever("02/03/1989", PageCarro.dataNas);
+	 	met.escrever(PageCarro.firstname, "Elisio");
+	    met.escrever(PageCarro.lastN, "Braga");
+		met.escrever(PageCarro.dataNas, "02/03/1989");
 		met.clicar(PageCarro.macho);
-	 	met.escrever("Jardim Santa Rosa", PageCarro.ende);
+	 	met.escrever(PageCarro.ende, "Jardim Santa Rosa");
 		met.clicar(PageCarro.nacionalidade);
-	 	met.escrever("14808192", PageCarro.cep);
-		met.escrever("Carambolas", PageCarro.city);
+	 	met.escrever(PageCarro.cep, "14808192");
+		met.escrever(PageCarro.city, "Carambolas");
 		met.clicar(PageCarro.occupation);
 		met.clicar(PageCarro.Hobbies);
-		met.escrever("www.ricardodanilo.com.br", PageCarro.webSite);
+		met.escrever(PageCarro.webSite, "www.ricardodanilo.com.br");
 		met.clicar(PageCarro.openPicture);
 		Thread.sleep(2000);
 		Metodos.uploadFile("C:\\Users\\igorr\\OneDrive\\Documents\\CNHRegras\\cnhcbncg", 0);
 		met.clicar(PageCarro.clicarProximo);
-	    met.escrever("05/18/2023", PageCarro.startDate);
-	    met.escrever("3.000.000,00", PageCarro.Sum);
+	    met.escrever(PageCarro.startDate, "05/18/2023");
+	    met.escrever(PageCarro.Sum, "3.000.000,00");
 		met.clicar(PageCarro.merito);
 		met.clicar(PageCarro.damange);
 		met.clicar(PageCarro.opcaoProd);
@@ -76,11 +76,11 @@ public class CadastroCarro extends DriverConect {
 		met.clicar(PageCarro.prox);
 		met.clicar(PageCarro.gold);
 		met.clicar(PageCarro.sendQuote);
-		met.escrever("daniel_figueiredo@tglaw.com.br", PageCarro.email);
-		met.escrever("11981715491", PageCarro.cel);
-	    met.escrever("daniel.123", PageCarro.userName);
-		met.escrever("u;p@G$7coi", PageCarro.pass);
-	 	met.escrever("u;p@G$7coi", PageCarro.confirmPass);
+		met.escrever(PageCarro.email, "daniel_figueiredo@tglaw.com.br");
+		met.escrever(PageCarro.cel, "11981715491");
+	    met.escrever(PageCarro.userName, "daniel.123");
+		met.escrever(PageCarro.pass, "u;p@G$7coi");
+	 	met.escrever(PageCarro.confirmPass, "u;p@G$7coi");
 
 	}
 

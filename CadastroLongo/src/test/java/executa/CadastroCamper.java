@@ -31,41 +31,41 @@ public class CadastroCamper extends DriverConect {
 	public void realizo_o_cadastro() {
 
 		mtd.clicarCmEspera(PageCamper.modeloCamper);
-		mtd.escrever("248", PageCamper.performCarCamper);
-		mtd.escrever("05/23/2019", PageCamper.dataFabCamper);
+		mtd.escrever(PageCamper.performCarCamper, "248");
+		mtd.escrever(PageCamper.dataFabCamper, "05/23/2019");
 		mtd.clicar(PageCamper.AssCamper);
 		mtd.clicar(PageCamper.ladoVolantCamp);
 		mtd.clicar(PageCamper.tipCombCamper);
-		mtd.escrever("650", PageCamper.cargUtCamper);
-		mtd.escrever("1560", PageCamper.totalveicCamper);
-		mtd.escrever("12737", PageCamper.precoTabCamper);
-		mtd.escrever("40393902", PageCamper.numPlacaCamper);
-		mtd.escrever("34230", PageCamper.anualKmCamper);
+		mtd.escrever(PageCamper.cargUtCamper, "650");
+		mtd.escrever(PageCamper.totalveicCamper, "1560");
+		mtd.escrever(PageCamper.precoTabCamper, "12737");
+		mtd.escrever(PageCamper.numPlacaCamper, "40393902");
+		mtd.escrever(PageCamper.anualKmCamper, "34230");
 		mtd.clicar(PageCamper.proxCamper1);
-		mtd.escrever("Roberto", PageCamper.primNomeCamper);
-		mtd.escrever("Abilio", PageCamper.nameSobreCamper);
-		mtd.escrever("07/12/1996", PageCamper.dateCamperOf);
+		mtd.escrever(PageCamper.primNomeCamper, "Roberto");
+		mtd.escrever(PageCamper.nameSobreCamper, "Abilio");
+		mtd.escrever(PageCamper.dateCamperOf, "07/12/1996");
 		mtd.clicar(PageCamper.MachoCamper);
-		mtd.escrever("Rua Beduino Valquirio Neto", PageCamper.endrecoCamper);
+		mtd.escrever(PageCamper.endrecoCamper, "Rua Beduino Valquirio Neto");
 		mtd.clicar(PageCamper.nacioCamper);
-		mtd.escrever("4392012", PageCamper.zipCodCamper);
-		mtd.escrever("La bem longe ", PageCamper.CidCamper);
+		mtd.escrever(PageCamper.zipCodCamper, "4392012");
+		mtd.escrever(PageCamper.CidCamper, "La bem longe ");
 		mtd.clicar(PageCamper.ocupCamper);
 		mtd.clicar(PageCamper.HobbCamper);
-		mtd.escrever("www.fhdjs.com.br", PageCamper.redeInterCamper);
+		mtd.escrever(PageCamper.redeInterCamper, "www.fhdjs.com.br");
 		mtd.clicar(PageCamper.proxiCamper2);
-		mtd.escrever("05/20/2023", PageCamper.inicSegCamper);
+		mtd.escrever(PageCamper.inicSegCamper, "05/20/2023");
 		mtd.clicar(PageCamper.somaSegCamp);
 		mtd.clicar(PageCamper.segDanosCamper);
 		mtd.clicar(PageCamper.prodOpcCamper);
 		mtd.clicar(PageCamper.proxCamper3);
 		mtd.clicar(PageCamper.priceOption);
 		mtd.clicarCmEspera(PageCamper.nextcamper4);
-		mtd.escrever("abiliorob@gmail.com", PageCamper.emailCamper);
-		mtd.escrever("11983928393", PageCamper.phoneCamper);
-		mtd.escrever("robuser21", PageCamper.userNameCamper);
-		mtd.escrever("Sl2394@3", PageCamper.passCamp);
-		mtd.escrever("Sl2394@3", PageCamper.confPass);
+		mtd.escrever(PageCamper.emailCamper, "abiliorob@gmail.com");
+		mtd.escrever(PageCamper.phoneCamper, "11983928393");
+		mtd.escrever(PageCamper.userNameCamper, "robuser21");
+		mtd.escrever(PageCamper.passCamp, "Sl2394@3");
+		mtd.escrever(PageCamper.confPass, "Sl2394@3");
 
 	}
 
