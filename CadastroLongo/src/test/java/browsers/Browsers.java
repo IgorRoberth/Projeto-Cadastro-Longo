@@ -43,6 +43,7 @@ public class Browsers extends DriverConect{
 			edgeOptions.setHeadless(false);
 			edgeOptions.addArguments("--disable-gpu");
 			edgeOptions.addArguments("--window-size=1400,800");
+			edgeOptions.addArguments("--remote-allow-origins=*");
 			WebDriver edgeDriver = new EdgeDriver(edgeOptions);
 			driver = edgeDriver;
 		}

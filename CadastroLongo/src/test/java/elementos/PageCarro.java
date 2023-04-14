@@ -3,7 +3,6 @@ package elementos;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-
 public class PageCarro {
 
 	public static By clicarAutomobile = By.name("Navigation Automobile");
@@ -47,8 +46,6 @@ public class PageCarro {
 	public static By occupation = By.cssSelector("#occupation > option:nth-child(2)");
 
 	public static By webSite = By.cssSelector("#website");
-
-	public static By openPicture = By.cssSelector("button[class=\"ideal-file-upload\"]");
 	
 	public static By clicarProximo = By.cssSelector("#nextenterproductdata");
 

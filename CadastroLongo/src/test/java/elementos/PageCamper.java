@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class PageCamper {
 	
-		public static By clickCamper = By.cssSelector("#nav_camper");
+		public static By clickCamper = By.cssSelector("a[id=\"nav_camper\"]");
 		
 		public static By modeloCamper = By.cssSelector("#make > option:nth-child(5)");
 		
@@ -82,6 +82,6 @@ public class PageCamper {
 	    
 	    public static By sendEmail = By.cssSelector("#sendemail");
 	    
-	    public static By okCamper = By.cssSelector("");
+	    public static By camperFim = By.cssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button");
 
 }

@@ -17,7 +17,7 @@ Feature: Cadastro seguro
     When realizar cadastro caminhao
     Then finallizar cadastro caminhao
       
-  @motocicleta
+  @moto
   Scenario: Cadastrando seguro de moto
    Given que entre no site para cadastrar moto
      And clicar em motorcycle

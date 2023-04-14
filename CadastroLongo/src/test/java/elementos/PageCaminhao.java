@@ -49,8 +49,6 @@ public class PageCaminhao {
 		public static By hobCamExcesso = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(1) > span");
 
 		public static By hobCamParaquedismo = By.cssSelector("#insurance-form > div > section:nth-child(2) > div.field.idealforms-field.idealforms-field-checkbox > p > label:nth-child(4)");
-
-		public static By abrirImagem = By.cssSelector("button[id=\"open\"]");
 		
 		public static By SiteCam = By.cssSelector("#website");
 

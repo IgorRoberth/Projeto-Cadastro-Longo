@@ -31,7 +31,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Metodos extends Browsers {
 
-	public void clicar(By elemento) {
+	public static void clicar(By elemento) {
 		try {
 			driver.findElement(elemento).click();
 		} catch (Exception e) {
@@ -40,23 +40,23 @@ public class Metodos extends Browsers {
 		}
 	}
 
-	public void clicarCmEspera(By elemento) {
+	public static void clicarCmEspera(By elemento) {
 
 		new WebDriverWait(driver, 4000).until(ExpectedConditions.elementToBeClickable(elemento)).click();
 
 	}
 
-	public void escrever(By elemento, String texto) {
+	public static void escrever(By elemento, String texto) {
 
 		driver.findElement(elemento).sendKeys(texto);
 	}
 
-	public void escreverCmEspera(By elemento ,String texto) {
+	public static void escreverCmEspera(By elemento ,String texto) {
 		new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(elemento)).sendKeys(texto);
 
 	}
 	
-	public void scroll() {
+	public static void scroll() {
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,100)");
@@ -75,30 +75,11 @@ public class Metodos extends Browsers {
 		}
 	}
 	
-	public static void uploadFile(String filePath, int waitTime) {
-		try {
-			Robot robot = new Robot();
-			StringSelection ss = new StringSelection(filePath);
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.delay(2000);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			robot.delay(waitTime);
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public void validaTexto(By elemento, String textoEsperado) {
+	public static void validaTexto(By elemento, String textoEsperado) {
 
 		WebElement element;
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		element = wait.until(ExpectedConditions.elementToBeClickable(elemento));
-
 		String textoCapturado = driver.findElement(elemento).getText();
 		assertTrue(textoCapturado.contains(textoEsperado));
 	}
