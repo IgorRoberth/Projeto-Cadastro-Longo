@@ -63,18 +63,6 @@ public class Metodos extends Browsers {
 
 	}
 	
-	public static void ClickRobot(int y, int x) throws AWTException {
-		try {
-			Robot Robot = new Robot();
-			Robot.delay(3000);
-			Robot.mouseMove(y,x);
-			Robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
-			Robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-	}
-	
 	public static void validaTexto(By elemento, String textoEsperado) {
 
 		WebElement element;
