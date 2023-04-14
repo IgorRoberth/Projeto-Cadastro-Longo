@@ -1,6 +1,5 @@
 package executa;
 
-import drivers.DriverConect;
 import elementos.PageCamper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

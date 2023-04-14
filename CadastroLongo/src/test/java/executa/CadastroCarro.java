@@ -1,7 +1,6 @@
 package executa;
 
 import browsers.Browsers;
-import drivers.DriverConect;
 import elementos.PageCarro;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

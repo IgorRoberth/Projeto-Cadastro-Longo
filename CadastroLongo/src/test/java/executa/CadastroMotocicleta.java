@@ -1,7 +1,5 @@
 package executa;
 
-import browsers.Browsers;
-import elementos.PageCarro;
 import elementos.PageMotocicleta;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

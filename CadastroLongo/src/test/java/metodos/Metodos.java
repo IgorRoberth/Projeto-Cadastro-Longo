@@ -2,7 +2,6 @@ package metodos;
 
 import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,13 +31,6 @@ public class Metodos extends Browsers {
 
 	public static void escreverCmEspera(By elemento ,String texto) {
 		new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(elemento)).sendKeys(texto);
-
-	}
-	
-	public static void scroll() {
-		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,100)");
 
 	}
 	

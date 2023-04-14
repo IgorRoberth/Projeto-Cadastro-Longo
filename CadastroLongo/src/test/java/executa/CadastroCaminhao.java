@@ -1,7 +1,5 @@
 package executa;
 
-import java.io.IOException;
-import drivers.DriverConect;
 import elementos.PageCaminhao;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
