@@ -1,7 +1,5 @@
 package preenchendo;
 
-import java.io.IOException;
-
 import org.junit.Test;
 import elementos.PageCaminhao;
 import elementos.PageCamper;

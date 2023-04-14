@@ -1,7 +1,5 @@
 package executa;
 
-import java.awt.AWTException;
-import java.io.IOException;
 import drivers.DriverConect;
 import elementos.PageCamper;
 import io.cucumber.java.en.Given;

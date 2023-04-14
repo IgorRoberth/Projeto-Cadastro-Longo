@@ -1,7 +1,5 @@
 package executa;
 
-import java.io.IOException;
-
 import browsers.Browsers;
 import elementos.PageCarro;
 import elementos.PageMotocicleta;
