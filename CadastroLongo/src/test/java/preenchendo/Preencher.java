@@ -10,10 +10,10 @@ import elementos.PageMotocicleta;
 import metodos.Metodos;
 
 public class Preencher {
-	
+
 	@Test
 	public static void preencherCarro() {
-	
+
 		Metodos.clicar(PageCarro.selecionarCarro);
 		Metodos.escreverCmEspera(PageCarro.performance, "200");
 		Metodos.escrever(PageCarro.date, "01/01/2022");
@@ -49,20 +49,20 @@ public class Preencher {
 		Metodos.escrever(PageCarro.userName, "daniel.123");
 		Metodos.escrever(PageCarro.pass, "u;p@G$7coi");
 		Metodos.escrever(PageCarro.confirmPass, "u;p@G$7coi");
-   
+
 	}
-	
+
 	@Test
 	public static void finalizarCarro() {
-	
+
 		Metodos.clicar(PageCarro.finalizado);
 		Metodos.validaTexto(PageCarro.validarMsg, "Sending e-mail success!");
 		Metodos.clicarCmEspera(PageCarro.okCarro);
-    }
-	
+	}
+
 	@Test
-	public static void preencherCaminhão() {	
-    
+	public static void preencherCaminhão() {
+
 		Metodos.clicar(PageCaminhao.MarcaCaminhao);
 		Metodos.escreverCmEspera(PageCaminhao.Desemp, "263");
 		Metodos.escrever(PageCaminhao.caFab, "12/03/2020");
@@ -85,7 +85,7 @@ public class Preencher {
 		Metodos.clicar(PageCaminhao.OcupCam);
 		Metodos.clicar(PageCaminhao.hobCamExcesso);
 		Metodos.clicar(PageCaminhao.hobCamParaquedismo);
-        Metodos.escreverCmEspera(PageCaminhao.SiteCam, "www.deveriocardoso.com.br");
+		Metodos.escreverCmEspera(PageCaminhao.SiteCam, "www.deveriocardoso.com.br");
 		Metodos.clicar(PageCaminhao.next2);
 		Metodos.escreverCmEspera(PageCaminhao.DataCamincio, "07/15/2023");
 		Metodos.clicar(PageCaminhao.ValorseguroCAM);
@@ -98,19 +98,19 @@ public class Preencher {
 		Metodos.escrever(PageCaminhao.phoneCamin, "11954239467");
 		Metodos.escrever(PageCaminhao.userSib, "siberioChavao");
 		Metodos.escrever(PageCaminhao.passCamin, "Sib@123456!A");
-		Metodos.escrever(PageCaminhao.confirPassCamin, "Sib@123456!A");	
+		Metodos.escrever(PageCaminhao.confirPassCamin, "Sib@123456!A");
 
 	}
-	
+
 	@Test
 	public static void finalizarCaminhao() {
-	
+
 		Metodos.clicar(PageCaminhao.next5);
-	    Metodos.validaTexto(PageCaminhao.resultName, "Sending e-mail success!");
-	    Metodos.clicarCmEspera(PageCaminhao.finalizar);
-	
+		Metodos.validaTexto(PageCaminhao.resultName, "Sending e-mail success!");
+		Metodos.clicarCmEspera(PageCaminhao.finalizar);
+
 	}
-	
+
 	@Test
 	public static void preencherMoto() {
 
@@ -147,21 +147,21 @@ public class Preencher {
 		Metodos.escrever(PageMotocicleta.userMoto, "julio145");
 		Metodos.escrever(PageMotocicleta.passMoto, "Fgp3214@f");
 		Metodos.escrever(PageMotocicleta.confirmMoto, "Fgp3214@f");
-		
-    }
-	
+
+	}
+
 	@Test
 	public static void finalizarMoto() {
-	
+
 		Metodos.clicar(PageMotocicleta.proxMoto5);
 		Metodos.validaTexto(PageMotocicleta.resultadoMoto, "Sending e-mail success!");
 		Metodos.clicar(PageMotocicleta.okMoto);
-		
+
 	}
-	
+
 	@Test
 	public static void preencherCamper() {
-	
+
 		Metodos.clicarCmEspera(PageCamper.clickCamper);
 		Metodos.clicarCmEspera(PageCamper.modeloCamper);
 		Metodos.escrever(PageCamper.performCarCamper, "248");
@@ -199,15 +199,15 @@ public class Preencher {
 		Metodos.escrever(PageCamper.userNameCamper, "robuser21");
 		Metodos.escrever(PageCamper.passCamp, "Sl2394@3");
 		Metodos.escrever(PageCamper.confPass, "Sl2394@3");
-		
+
 	}
-	
+
 	@Test
 	public static void finalizarCamper() {
-	
+
 		Metodos.clicarCmEspera(PageCamper.sendEmail);
 		Metodos.validaTexto(PageCamper.resultNameCamper, "Sending e-mail success!");
-        Metodos.clicarCmEspera(PageCamper.camperFim);
-		
+		Metodos.clicarCmEspera(PageCamper.camperFim);
+
 	}
-}	
+}
