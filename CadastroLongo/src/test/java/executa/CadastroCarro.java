@@ -18,13 +18,6 @@ public class CadastroCarro {
 		Browsers.abrirNavegador("Chrome");
 		
 	}
-
-	@After
-	public void finalizandoTeste() {
-
-		Browsers.fecharNavegador();
-
-	}
 	
 	@Given("que entre no site para cadastrar carro")
 	public void que_entre_no_para_cadastrar_carro() {
@@ -50,5 +43,12 @@ public class CadastroCarro {
 
 		Preencher.finalizarCarro();
 		
+	}
+	
+	@After
+	public void finalizandoTeste() {
+
+		Browsers.fecharNavegador();
+
 	}
 }
