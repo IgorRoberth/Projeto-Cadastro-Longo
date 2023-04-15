@@ -9,9 +9,9 @@ public class PageCarro {
 
 	public static By selecionarCarro = By.cssSelector("#make > option:nth-child(2)");
 
-	public static By performance = By.name("[kW]");
+	public static By performance = By.cssSelector("#engineperformance");
 
-	public static By date = By.id("dateofmanufacture");
+	public static By date = By.cssSelector("#dateofmanufacture");
 
 	public static By assentos = By.cssSelector("#numberofseats > option:nth-child(5)");
 

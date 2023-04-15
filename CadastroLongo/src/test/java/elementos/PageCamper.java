@@ -8,7 +8,7 @@ public class PageCamper {
 		
 		public static By modeloCamper = By.cssSelector("#make > option:nth-child(5)");
 		
-		public static By performCarCamper = By.name("[kW]");
+		public static By performCarCamper = By.cssSelector("#engineperformance");
 		
 		public static By dataFabCamper = By.cssSelector("#dateofmanufacture");
 		
