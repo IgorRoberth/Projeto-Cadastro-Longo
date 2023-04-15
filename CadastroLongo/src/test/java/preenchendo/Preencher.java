@@ -50,7 +50,6 @@ public class Preencher {
 
 	}
 
-	@Test
 	public static void finalizarCarro() {
 
 		Metodos.clicar(PageCarro.finalizado);
@@ -58,7 +57,6 @@ public class Preencher {
 		Metodos.clicarCmEspera(PageCarro.okCarro);
 	}
 
-	@Test
 	public static void preencherCaminhão() {
 
 		Metodos.clicar(PageCaminhao.MarcaCaminhao);
@@ -100,7 +98,6 @@ public class Preencher {
 
 	}
 
-	@Test
 	public static void finalizarCaminhao() {
 
 		Metodos.clicar(PageCaminhao.next5);
@@ -109,7 +106,6 @@ public class Preencher {
 
 	}
 
-	@Test
 	public static void preencherMoto() {
 
 		Metodos.clicar(PageMotocicleta.marcaMoto);
@@ -148,7 +144,6 @@ public class Preencher {
 
 	}
 
-	@Test
 	public static void finalizarMoto() {
 
 		Metodos.clicar(PageMotocicleta.proxMoto5);
@@ -157,7 +152,6 @@ public class Preencher {
 
 	}
 
-	@Test
 	public static void preencherCamper() {
 
 		Metodos.clicarCmEspera(PageCamper.clickCamper);
@@ -199,8 +193,7 @@ public class Preencher {
 		Metodos.escrever(PageCamper.confPass, "Sl2394@3");
 
 	}
-
-	@Test
+	
 	public static void finalizarCamper() {
 
 		Metodos.clicarCmEspera(PageCamper.sendEmail);
