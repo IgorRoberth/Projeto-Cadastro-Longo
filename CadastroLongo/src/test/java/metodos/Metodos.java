@@ -11,27 +11,16 @@ public class Metodos extends Browsers {
 
 	public static void clicar(By elemento) {
 		try {
-			driver.findElement(elemento).click();
+		    new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(elemento)).click();
 		} catch (Exception e) {
 			System.err.println("-------erro ao clicar---------" + e.getMessage());
 			System.err.println("-------causa do erro---------" + e.getCause());
 		}
 	}
 
-	public static void clicarCmEspera(By elemento) {
+   	public static void escrever(By elemento, String texto) {
 
-		new WebDriverWait(driver, 4000).until(ExpectedConditions.elementToBeClickable(elemento)).click();
-
-	}
-
-	public static void escrever(By elemento, String texto) {
-
-		driver.findElement(elemento).sendKeys(texto);
-	}
-
-	public static void escreverCmEspera(By elemento ,String texto) {
-		new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(elemento)).sendKeys(texto);
-
+   		new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(elemento)).sendKeys(texto);
 	}
 	
 	public static void validaTexto(By elemento, String textoEsperado) {

@@ -17,7 +17,7 @@ public class CadastroCamper {
 	@Given("clico em seguro campista")
 	public void clico_em_seguro_campista() {
 
-		Metodos.clicarCmEspera(PageCamper.clickCamper);
+		Metodos.clicar(PageCamper.clickCamper);
 
 	}
 
