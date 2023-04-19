@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 public class PageCadastro {
 
 	public static class HomePage {
-		
 		public static By clicarAutomobile = By.name("Navigation Automobile");
 		public static By clicartruck = By.name("Navigation Truck");
 		public static By clicarmotocicleta = By.cssSelector("#nav_motorcycle");
@@ -14,7 +13,6 @@ public class PageCadastro {
 	}
 	
 	public static class VeiculosSelecionados {
-
 		public static By Carro = By.cssSelector("#make > option:nth-child(2)");
 		public static By Caminhao = By.cssSelector("#make > option:nth-child(7)");
 		public static By Moto = By.cssSelector("#make > option:nth-child(13)");
