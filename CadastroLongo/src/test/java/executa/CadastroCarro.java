@@ -15,7 +15,7 @@ public class CadastroCarro {
 	@Before
 	public void inicioTeste() {
 
-		Browsers.abrirNavegador("Chrome");
+		Browsers.abrirNavegador("Edge");
 
 	}
 	
