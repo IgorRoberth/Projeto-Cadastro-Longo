@@ -39,7 +39,7 @@ public class Browsers extends DriverConect{
 		} else {
 			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
 			EdgeOptions edgeOptions = new EdgeOptions();
-			edgeOptions.setCapability("useAutomationExtension", false);
+			edgeOptions.setCapability("useAutomationExtension", true);
 			edgeOptions.setHeadless(false);
 			edgeOptions.addArguments("--disable-gpu");
 			edgeOptions.addArguments("--window-size=1400,800");

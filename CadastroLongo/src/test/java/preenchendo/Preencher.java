@@ -1,10 +1,12 @@
 package preenchendo;
 
 import org.junit.Test;
+import elementos.PageCadastro;
 import elementos.PageCadastro.DadosPessoais;
 import elementos.PageCadastro.DadosSeguro;
 import elementos.PageCadastro.DadosUsuario;
 import elementos.PageCadastro.DadosVeiculos;
+import elementos.PageCadastro.HomePage;
 import elementos.PageCadastro.PlanosSeguros;
 import elementos.PageCadastro.Produtos;
 import elementos.PageCadastro.SeguroDanos;
@@ -23,7 +25,7 @@ public class Preencher {
 		Metodos.clicar(VeiculosSelecionados.Carro);
 		Metodos.escrever(DadosVeiculos.performance, "200");
 		Metodos.escrever(DadosVeiculos.dataFab, "01/01/2022");
-		Metodos.clicar(DadosVeiculos.assentos);
+		Metodos.clicar(PageCadastro.Assentos.car);
 		Metodos.clicar(DadosVeiculos.combust);
 		Metodos.escrever(DadosVeiculos.prcTable, "55000");
 		Metodos.escrever(DadosVeiculos.nPlaca, "GFP1029");
@@ -81,7 +83,7 @@ public class Preencher {
 		Metodos.clicar(VeiculosSelecionados.Caminhao);
 		Metodos.escrever(DadosVeiculos.performance, "263");
 		Metodos.escrever(DadosVeiculos.dataFab, "12/03/2020");
-		Metodos.clicar(PageCaminhao.caminAss);
+		Metodos.clicar(PageCadastro.Assentos.caminhao);
 		Metodos.clicar(PageCaminhao.camComb);
 		Metodos.escrever(DadosVeiculos.CargaUtil, "1000");
 		Metodos.escrever(DadosVeiculos.Peso, "23000");
@@ -140,11 +142,11 @@ public class Preencher {
 	public static void preencherMoto() {
 
 		Metodos.clicar(VeiculosSelecionados.Moto);
-		Metodos.clicar(PageMotocicleta.modeloMoto);
+		Metodos.clicar(VeiculosSelecionados.modeloMt);
 		Metodos.escrever(PageMotocicleta.cilindroMoto, "200");
 		Metodos.escrever(DadosVeiculos.performance, "48");
 		Metodos.escrever(DadosVeiculos.dataFab, "11/12/2020");
-		Metodos.clicar(PageMotocicleta.assentMoto);
+		Metodos.clicar(PageCadastro.Assentos.moto);
 		Metodos.escrever(DadosVeiculos.prcTable, "15250");
 		Metodos.escrever(DadosVeiculos.kmAnual, "34567");
 		Metodos.clicar(DadosVeiculos.next);
@@ -201,7 +203,7 @@ public class Preencher {
 		Metodos.clicar(VeiculosSelecionados.modeloCamper);
 		Metodos.escrever(DadosVeiculos.performance, "248");
 		Metodos.escrever(DadosVeiculos.dataFab, "05/23/2019");
-		Metodos.clicar(PageCamper.AssCamper);
+		Metodos.clicar(PageCadastro.Assentos.camper);
 		Metodos.clicar(PageCamper.ladoVolantCamp);
 		Metodos.clicar(PageCamper.tipCombCamper);
 		Metodos.escrever(DadosVeiculos.CargaUtil, "650");

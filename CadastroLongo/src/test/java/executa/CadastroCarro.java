@@ -16,7 +16,7 @@ public class CadastroCarro {
 	public void inicioTeste() {
 
 		Browsers.abrirNavegador("Chrome");
-		
+
 	}
 	
 	@Given("que entre no site para cadastrar carro")
@@ -27,7 +27,7 @@ public class CadastroCarro {
 	@Given("clico em automobile")
 	public void clico_em_automobile() {
 
-		Metodos.clicar(PageCadastro.HomePage.clicarAutomobile);
+		Metodos.clicar(PageCadastro.HomePage.Automobile);
 
 	}
 

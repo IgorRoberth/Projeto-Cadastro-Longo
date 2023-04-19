@@ -17,7 +17,7 @@ public class CadastroCaminhao {
 	@Given("clicar em truck")
 	public void clicar_em_truck() {
 
-	    Metodos.clicar(PageCadastro.HomePage.clicartruck);
+	    Metodos.clicar(PageCadastro.HomePage.Truck);
 
 	}
 

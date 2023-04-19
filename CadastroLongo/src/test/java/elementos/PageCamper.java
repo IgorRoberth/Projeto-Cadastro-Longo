@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 
 public class PageCamper {
 
-	public static By AssCamper = By.cssSelector("#numberofseats > option:nth-child(9)");
 	public static By ladoVolantCamp = By.cssSelector("#insurance-form > div > section:nth-child(1) > div:nth-child(5) > p > label:nth-child(2)");
 	public static By tipCombCamper = By.cssSelector("#fuel > option:nth-child(5)");
 	public static By totalveicCamper = By.cssSelector("#totalweight");

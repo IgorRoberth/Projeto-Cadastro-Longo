@@ -17,7 +17,7 @@ public class CadastroMotocicleta {
 	@Given("clicar em motorcycle")
 	public void clicar_em_motorcycle() {
 		
-		Metodos.clicar(PageCadastro.HomePage.clicarmotocicleta);
+		Metodos.clicar(PageCadastro.HomePage.Motocicleta);
 
 	}
 
