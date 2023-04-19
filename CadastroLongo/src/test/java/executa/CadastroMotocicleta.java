@@ -1,6 +1,6 @@
 package executa;
 
-import elementos.PageMotocicleta;
+import elementos.PageCadastro;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +17,7 @@ public class CadastroMotocicleta {
 	@Given("clicar em motorcycle")
 	public void clicar_em_motorcycle() {
 		
-		Metodos.clicar(PageMotocicleta.motocicleta);
+		Metodos.clicar(PageCadastro.HomePage.clicarmotocicleta);
 
 	}
 
@@ -25,6 +25,9 @@ public class CadastroMotocicleta {
 	public void executar_cadastro() {
 		
 		Preencher.preencherMoto();
+		Preencher.DadosPessoaisMoto();
+		Preencher.dadosSeguroMoto();
+		Preencher.DadosUsuarioMoto();
 		
 	}
 

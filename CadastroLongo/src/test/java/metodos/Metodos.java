@@ -1,10 +1,15 @@
 package metodos;
 
 import static org.junit.Assert.assertTrue;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import browsers.Browsers;
 
 public class Metodos extends Browsers {

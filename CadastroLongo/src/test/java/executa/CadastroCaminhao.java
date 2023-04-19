@@ -1,6 +1,6 @@
 package executa;
 
-import elementos.PageCaminhao;
+import elementos.PageCadastro;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +17,7 @@ public class CadastroCaminhao {
 	@Given("clicar em truck")
 	public void clicar_em_truck() {
 
-		Metodos.clicar(PageCaminhao.truck);
+	    Metodos.clicar(PageCadastro.HomePage.clicartruck);
 
 	}
 
@@ -25,13 +25,16 @@ public class CadastroCaminhao {
 	public void realizar_cadastro_caminhao() {
 
 		Preencher.preencherCaminhão();
+		Preencher.DadosPessoaisCaminhao();
+		Preencher.dadosSeguroCaminhao();
+		Preencher.DadosUsuarioCaminhao();
 
 	}
 
 	@Then("finallizar cadastro caminhao")
 	public void finallizar_cadastro_caminhao() {
 
-        Preencher.finalizarCaminhao();
+        Preencher.finalizarCadastroCaminhao();
 
     }
 }

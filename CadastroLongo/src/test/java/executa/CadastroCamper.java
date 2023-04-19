@@ -1,6 +1,6 @@
 package executa;
 
-import elementos.PageCamper;
+import elementos.PageCadastro;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +17,7 @@ public class CadastroCamper {
 	@Given("clico em seguro campista")
 	public void clico_em_seguro_campista() {
 
-		Metodos.clicar(PageCamper.clickCamper);
+		Metodos.clicar(PageCadastro.HomePage.Camper);
 
 	}
 
@@ -25,6 +25,9 @@ public class CadastroCamper {
 	public void realizo_o_cadastro() {
 
 		Preencher.preencherCamper();
+		Preencher.dadosPessoaisCamper();
+		Preencher.dadosSeguroCamper();
+		Preencher.DadosUsuarioCamper();
 
 	}
 

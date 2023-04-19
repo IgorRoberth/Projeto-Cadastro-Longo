@@ -1,7 +1,7 @@
 package executa;
 
 import browsers.Browsers;
-import elementos.PageCarro;
+import elementos.PageCadastro;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -27,7 +27,7 @@ public class CadastroCarro {
 	@Given("clico em automobile")
 	public void clico_em_automobile() {
 
-		Metodos.clicar(PageCarro.clicarAutomobile);
+		Metodos.clicar(PageCadastro.HomePage.clicarAutomobile);
 
 	}
 
@@ -35,20 +35,23 @@ public class CadastroCarro {
 	public void realizar_cadastro() {
 
 		Preencher.preencherCarro();
+		Preencher.preencherDadosPessoaisCarro();
+		Preencher.dadosSeguroCarro();
+		Preencher.DadosUsuarioCarro();
 
 	}
 
 	@Then("finalizar cadastro")
 	public void finalizar_cadastro() {
 
-		Preencher.finalizarCarro();
+		Preencher.finalizarCadastroCarro();
 		
 	}
 	
 	@After
 	public void finalizandoTeste() {
 
-		Browsers.fecharNavegador();
+	    Browsers.fecharNavegador();
 
 	}
 }
