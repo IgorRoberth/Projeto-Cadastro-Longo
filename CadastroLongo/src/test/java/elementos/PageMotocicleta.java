@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class PageMotocicleta {
 	
-	    public static By modeloMoto = By.cssSelector("#model > option:nth-child(5)");
+	       public static By modeloMoto = By.cssSelector("#model > option:nth-child(5)");
 		public static By cilindroMoto = By.cssSelector("#cylindercapacity");
 		public static By assentMoto = By.cssSelector("#numberofseatsmotorcycle > option:nth-child(3)");
 		public static By ocupaMoto = By.cssSelector("#occupation > option:nth-child(6)");
