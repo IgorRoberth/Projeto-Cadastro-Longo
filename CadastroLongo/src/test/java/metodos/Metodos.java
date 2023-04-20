@@ -11,9 +11,8 @@ public class Metodos extends DriverConect {
 
 	public static void clicar(By elemento) {
   
-		new WebDriverWait(driver, 120).until(ExpectedConditions.elementToBeClickable(elemento)).click();
-    
-	}
+	     new WebDriverWait(driver, 120).until(ExpectedConditions.elementToBeClickable(elemento)).click();
+        }
 
 	public static void escrever(By elemento, String texto) {
 
