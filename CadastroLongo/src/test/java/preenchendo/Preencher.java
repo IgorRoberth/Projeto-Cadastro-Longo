@@ -141,7 +141,7 @@ public class Preencher {
 
 	public static void preencherMoto() {
 
-	    Metodos.clicar(VeiculosSelecionados.Moto);
+		Metodos.clicar(VeiculosSelecionados.Moto);
 		Metodos.clicar(VeiculosSelecionados.modeloMt);
 		Metodos.escrever(PageMotocicleta.cilindroMoto, "200");
 		Metodos.escrever(DadosVeiculos.performance, "48");
@@ -235,7 +235,7 @@ public class Preencher {
 		Metodos.escrever(DadosSeguro.DataInicio, "05/20/2024");
 		Metodos.clicar(PageCamper.somaSegCamp);
 		Metodos.clicar(PageCamper.segDanosCamper);
-        Metodos.clicar(Produtos.EuroProduct);
+    Metodos.clicar(Produtos.EuroProduct);
 		Metodos.clicar(Produtos.next3);
 	}
 

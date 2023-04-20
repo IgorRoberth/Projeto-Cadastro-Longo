@@ -10,9 +10,9 @@ import drivers.DriverConect;
 public class Metodos extends DriverConect {
 
 	public static void clicar(By elemento) {
-
+  
 		new WebDriverWait(driver, 120).until(ExpectedConditions.elementToBeClickable(elemento)).click();
-	
+    
 	}
 
 	public static void escrever(By elemento, String texto) {
@@ -21,8 +21,8 @@ public class Metodos extends DriverConect {
 	}
 
 	public static void validaTexto(By elemento, String textoEsperado) {
-
-	    WebElement element;
+  
+		WebElement element;
 		WebDriverWait wait = new WebDriverWait(driver, 1000);
 		element = wait.until(ExpectedConditions.elementToBeClickable(elemento));
 		String textoCapturado = driver.findElement(elemento).getText();

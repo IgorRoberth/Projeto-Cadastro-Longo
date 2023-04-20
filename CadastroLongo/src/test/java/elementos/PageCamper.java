@@ -11,5 +11,4 @@ public class PageCamper {
 	public static By HobbCamper = By.xpath("//*[text()=' Other']");	
 	public static By somaSegCamp = By.xpath("//*[text()=' 10.000.000,00']");
 	public static By segDanosCamper = By.xpath("//*[text()='No Coverage']");
-
 }
