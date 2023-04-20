@@ -7,8 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import drivers.DriverConect;
 
 public class Browsers extends DriverConect{
@@ -20,22 +18,13 @@ public class Browsers extends DriverConect{
 
 		if (navegador.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			ChromeOptions chromeOptions = new ChromeOptions();
+	    	ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.setHeadless(false);
 			chromeOptions.addArguments("--disable-gpu");
 			chromeOptions.addArguments("--window-size=1400,800");
 			chromeOptions.addArguments("--remote-allow-origins=*");
 			WebDriver chromeDriver = new ChromeDriver(chromeOptions);
 			driver = chromeDriver;
-		} else if (navegador.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.setHeadless(false);
-			firefoxOptions.addArguments("--disable-gpu");
-			firefoxOptions.addArguments("--window-size=1400,800");
-			WebDriver firefoxDriver = new FirefoxDriver(firefoxOptions);
-			driver = firefoxDriver;
-			driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 		} else {
 			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
 			EdgeOptions edgeOptions = new EdgeOptions();

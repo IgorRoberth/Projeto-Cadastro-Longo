@@ -18,7 +18,7 @@ public class CadastroCarro {
 		Browsers.abrirNavegador("Edge");
 
 	}
-	
+
 	@Given("que entre no site para cadastrar carro")
 	public void que_entre_no_para_cadastrar_carro() {
 
@@ -45,13 +45,13 @@ public class CadastroCarro {
 	public void finalizar_cadastro() {
 
 		Preencher.finalizarCadastroCarro();
-		
+
 	}
-	
+
 	@After
 	public void finalizandoTeste() {
 
-	    Browsers.fecharNavegador();
+		Browsers.fecharNavegador();
 
 	}
 }

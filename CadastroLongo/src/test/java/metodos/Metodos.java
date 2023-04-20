@@ -5,14 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import browsers.Browsers;
+import drivers.DriverConect;
 
-public class Metodos extends Browsers {
+public class Metodos extends DriverConect {
 
 	public static void clicar(By elemento) {
 
-		// Caso executar teste com Firefox, utilizar driver.findElement(elemento).click();
-		   new WebDriverWait(driver, 120).until(ExpectedConditions.elementToBeClickable(elemento)).click();
+		new WebDriverWait(driver, 120).until(ExpectedConditions.elementToBeClickable(elemento)).click();
 	
 	}
 
@@ -23,7 +22,7 @@ public class Metodos extends Browsers {
 
 	public static void validaTexto(By elemento, String textoEsperado) {
 
-		WebElement element;
+	    WebElement element;
 		WebDriverWait wait = new WebDriverWait(driver, 1000);
 		element = wait.until(ExpectedConditions.elementToBeClickable(elemento));
 		String textoCapturado = driver.findElement(elemento).getText();
