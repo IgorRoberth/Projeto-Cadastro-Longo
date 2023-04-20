@@ -23,13 +23,13 @@ public class Preencher {
 	public static void preencherCarro() {
 
 		Metodos.clicar(VeiculosSelecionados.Carro);
-	     Metodos.escrever(DadosVeiculos.performance, "200");
-		    Metodos.escrever(DadosVeiculos.dataFab, "01/01/2022");
+	        Metodos.escrever(DadosVeiculos.performance, "200");
+		Metodos.escrever(DadosVeiculos.dataFab, "01/01/2022");
 		Metodos.clicar(PageCadastro.Assentos.car);
 		Metodos.clicar(DadosVeiculos.combust);
 		Metodos.escrever(DadosVeiculos.prcTable, "55000");
 		Metodos.escrever(DadosVeiculos.nPlaca, "GFP1029");
-	    Metodos.escrever(DadosVeiculos.kmAnual, "25000");
+	        Metodos.escrever(DadosVeiculos.kmAnual, "25000");
  		Metodos.clicar(DadosVeiculos.next);
 	}
 
@@ -235,7 +235,7 @@ public class Preencher {
 		Metodos.escrever(DadosSeguro.DataInicio, "05/20/2024");
 		Metodos.clicar(PageCamper.somaSegCamp);
 		Metodos.clicar(PageCamper.segDanosCamper);
-    Metodos.clicar(Produtos.EuroProduct);
+                Metodos.clicar(Produtos.EuroProduct);
 		Metodos.clicar(Produtos.next3);
 	}
 
