@@ -30,7 +30,7 @@ public class Preencher {
 		Metodos.escrever(DadosVeiculos.prcTable, "55000");
 		Metodos.escrever(DadosVeiculos.nPlaca, "GFP1029");
 	        Metodos.escrever(DadosVeiculos.kmAnual, "25000");
- 	Metodos.clicar(DadosVeiculos.next);
+ 	  Metodos.clicar(DadosVeiculos.next);
 	}
 
 	public static void preencherDadosPessoaisCarro() {
