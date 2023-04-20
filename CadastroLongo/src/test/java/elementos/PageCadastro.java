@@ -5,24 +5,24 @@ import org.openqa.selenium.By;
 public class PageCadastro {
 
 	public static class HomePage {
-		public static By clicarAutomobile = By.name("Navigation Automobile");
-		public static By clicartruck = By.name("Navigation Truck");
-		public static By clicarmotocicleta = By.cssSelector("#nav_motorcycle");
+		public static By Automobile = By.name("Navigation Automobile");
+		public static By Truck = By.name("Navigation Truck");
+		public static By Motocicleta = By.cssSelector("#nav_motorcycle");
 		public static By Camper = By.cssSelector("a[id=\"nav_camper\"]");
 	
 	}
 	
 	public static class VeiculosSelecionados {
-		public static By Carro = By.cssSelector("#make > option:nth-child(2)");
-		public static By Caminhao = By.cssSelector("#make > option:nth-child(7)");
-		public static By Moto = By.cssSelector("#make > option:nth-child(13)");
-		public static By modeloCamper = By.cssSelector("#make > option:nth-child(5)");
+		public static By Carro = By.cssSelector("option[value=\"Audi\"]");
+		public static By Caminhao = By.cssSelector("option[value=\"Mercedes Benz\"]");
+		public static By Moto = By.cssSelector("option[value=\"Suzuki\"]");
+		public static By modeloMt = By.cssSelector("option[value=\"Motorcycle\"]");
+		public static By modeloCamper = By.cssSelector("option[value=\"Honda\"]");
 	}
 
 	public static class DadosVeiculos {
 		public static By performance = By.cssSelector("#engineperformance");
 		public static By dataFab = By.cssSelector("#dateofmanufacture");
-		public static By assentos = By.cssSelector("#numberofseats > option:nth-child(5)");
 		public static By combust = By.cssSelector("#fuel > option:nth-child(4)");
 		public static By CargaUtil = By.cssSelector("#payload");
 		public static By Peso = By.cssSelector("#totalweight");
@@ -71,10 +71,10 @@ public class PageCadastro {
 	}
 
 	public static class PlanosSeguros {
-		public static By Silver = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(1)");
-		public static By Gold = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(2)");
-		public static By Platinum = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(3)");
-		public static By Ultimate = By.cssSelector("#priceTable > tfoot > tr > th.group > label:nth-child(4)");
+		public static By Silver = By.xpath("//*[@id=\"priceTable\"]/tfoot/tr/th[2]/label[1]");
+		public static By Gold = By.xpath("//*[@id=\"priceTable\"]/tfoot/tr/th[2]/label[2]");
+		public static By Platinum = By.xpath("//*[@id=\"priceTable\"]/tfoot/tr/th[2]/label[3]");
+		public static By Ultimate = By.xpath("//*[@id=\"priceTable\"]/tfoot/tr/th[2]/label[4]");
 
 	}
 
@@ -82,5 +82,13 @@ public class PageCadastro {
 		public static By semCobertura = By.xpath("//*[text()='No Coverage']");
 		public static By cbParcial = By.xpath("//*[text()='Partial Coverage']");
 		public static By cbTotal = By.xpath("//*[text()='Full Coverage']");
+	}
+	
+	public static class Assentos {
+		public static By car = By.cssSelector("option[value=\"4\"]");
+		public static By moto = By.cssSelector("option[value=\"2\"]");
+		public static By caminhao = By.cssSelector("option[value=\"3\"]");
+		public static By camper = By.cssSelector("option[value=\"8\"]");
+	
 	}
 }
