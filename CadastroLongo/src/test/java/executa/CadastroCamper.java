@@ -1,7 +1,5 @@
 package executa;
 
-import java.awt.AWTException;
-import org.openqa.selenium.support.ui.Sleeper;
 import elementos.PageCadastro;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
