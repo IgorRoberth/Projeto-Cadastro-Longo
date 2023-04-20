@@ -24,7 +24,7 @@ public class Preencher {
 
 		Metodos.clicar(VeiculosSelecionados.Carro);
 	 Metodos.escrever(DadosVeiculos.performance, "200");
-		Metodos.escrever(DadosVeiculos.dataFab, "01/01/2022");
+		    Metodos.escrever(DadosVeiculos.dataFab, "01/01/2022");
 		Metodos.clicar(PageCadastro.Assentos.car);
 		Metodos.clicar(DadosVeiculos.combust);
 		Metodos.escrever(DadosVeiculos.prcTable, "55000");
