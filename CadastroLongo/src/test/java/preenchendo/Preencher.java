@@ -23,14 +23,14 @@ public class Preencher {
 	public static void preencherCarro() {
 
 		Metodos.clicar(VeiculosSelecionados.Carro);
-		Metodos.escrever(DadosVeiculos.performance, "200");
+	    Metodos.escrever(DadosVeiculos.performance, "200");
 		Metodos.escrever(DadosVeiculos.dataFab, "01/01/2022");
 		Metodos.clicar(PageCadastro.Assentos.car);
 		Metodos.clicar(DadosVeiculos.combust);
 		Metodos.escrever(DadosVeiculos.prcTable, "55000");
 		Metodos.escrever(DadosVeiculos.nPlaca, "GFP1029");
-		Metodos.escrever(DadosVeiculos.kmAnual, "25000");
-		Metodos.clicar(DadosVeiculos.next);
+	    Metodos.escrever(DadosVeiculos.kmAnual, "25000");
+ 		Metodos.clicar(DadosVeiculos.next);
 	}
 
 	public static void preencherDadosPessoaisCarro() {
@@ -199,7 +199,7 @@ public class Preencher {
 	}
 
 	public static void preencherCamper() {
-
+		
 		Metodos.clicar(VeiculosSelecionados.modeloCamper);
 		Metodos.escrever(DadosVeiculos.performance, "248");
 		Metodos.escrever(DadosVeiculos.dataFab, "05/23/2019");
@@ -232,10 +232,10 @@ public class Preencher {
 
 	public static void dadosSeguroCamper() {
 
-		Metodos.escrever(DadosSeguro.DataInicio, "05/20/2023");
+		Metodos.escrever(DadosSeguro.DataInicio, "05/20/2024");
 		Metodos.clicar(PageCamper.somaSegCamp);
 		Metodos.clicar(PageCamper.segDanosCamper);
-		Metodos.clicar(Produtos.EuroProduct);
+    Metodos.clicar(Produtos.EuroProduct);
 		Metodos.clicar(Produtos.next3);
 	}
 

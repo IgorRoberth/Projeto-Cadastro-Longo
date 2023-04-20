@@ -1,5 +1,7 @@
 package executa;
 
+import java.awt.AWTException;
+import org.openqa.selenium.support.ui.Sleeper;
 import elementos.PageCadastro;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,7 +18,7 @@ public class CadastroCamper {
 
 	@Given("clico em seguro campista")
 	public void clico_em_seguro_campista() {
-
+		
 		Metodos.clicar(PageCadastro.HomePage.Camper);
 
 	}

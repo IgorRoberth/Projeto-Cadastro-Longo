@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class PageCadastro {
 
 	public static class HomePage {
-		public static By Automobile = By.name("Navigation Automobile");
+    public static By Automobile = By.name("Navigation Automobile");
 		public static By Truck = By.name("Navigation Truck");
 		public static By Motocicleta = By.cssSelector("#nav_motorcycle");
 		public static By Camper = By.cssSelector("a[id=\"nav_camper\"]");
@@ -15,9 +15,10 @@ public class PageCadastro {
 	public static class VeiculosSelecionados {
 		public static By Carro = By.cssSelector("option[value=\"Audi\"]");
 		public static By Caminhao = By.cssSelector("option[value=\"Mercedes Benz\"]");
-		public static By Moto = By.cssSelector("option[value=\"Suzuki\"]");
+    public static By Moto = By.xpath("//*[@id=\"make\"]/option[13]");
 		public static By modeloMt = By.cssSelector("option[value=\"Motorcycle\"]");
 		public static By modeloCamper = By.cssSelector("option[value=\"Honda\"]");
+    
 	}
 
 	public static class DadosVeiculos {
@@ -48,8 +49,8 @@ public class PageCadastro {
 	public static class DadosSeguro {
 		public static By DataInicio = By.cssSelector("#startdate");
 		public static By Soma = By.cssSelector("#insurancesum");
-		public static By cortesyNo = By.cssSelector("#courtesycar > option:nth-child(2)");
-		public static By cortesyYes = By.cssSelector("#courtesycar > option:nth-child(3)");
+		public static By cortesyNo = By.cssSelector("option[value=\"No\"]");
+		public static By cortesyYes = By.cssSelector("option[value=\"Yes\"]");
 	}
 
 	public static class Produtos {
