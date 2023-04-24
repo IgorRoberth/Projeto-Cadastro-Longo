@@ -18,7 +18,7 @@ public class Browsers extends DriverConect{
 
 		if (navegador.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-	    	        ChromeOptions chromeOptions = new ChromeOptions();
+	    	       ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.setHeadless(false);
 			chromeOptions.addArguments("--disable-gpu");
 			chromeOptions.addArguments("--window-size=1400,800");
